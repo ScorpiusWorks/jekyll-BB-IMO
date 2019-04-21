@@ -1,0 +1,24 @@
+<section class="editor-area d-flex align-items-center">
+    <!-- Editor Content -->
+    <div class="editor-content-area">
+        <!-- Section Heading -->
+        <div class="section-heading wow fadeInUp" data-wow-delay="250ms">
+            <img src="{{ site.data.editor.icon }}" alt="">
+            <h2>{{ site.data.editor.name }}</h2>
+            <p>{{ site.data.editor.position.[page.lang] }}</p>
+        </div>
+        <p class="wow fadeInUp" data-wow-delay="500ms">{{ site.data.editor.text.[page.lang] }}</p>
+        <!-- <div class="address wow fadeInUp" data-wow-delay="750ms">
+            <h6><img src="img/icons/phone-call.png" alt=""> +45 677 8993000 223</h6>
+            <h6><img src="img/icons/envelope.png" alt=""> bboese@bb-imo.ro</h6>
+        </div> -->
+        <div class="signature mt-50 wow fadeInUp" data-wow-delay="1000ms">
+            <img src="{{ site.data.editor.signature }}" alt="">
+        </div>
+    </div>
+
+    <!-- Editor Thumbnail -->
+    <div class="editor-thumbnail">
+        <img src="{{ site.data.editor.photo }}" alt="">
+    </div>
+</section>

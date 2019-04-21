@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<!-- ##### Breadcumb Area Start ##### -->
+{% include breadcrumbs.html %}
+<!-- ##### Breadcumb Area End ##### -->
+
+<section class="contact-area section-padding-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2>{{ site.data.contact-page.[page.lang].heading }}</h2>
+                    <p>{{ site.data.contact-page.[page.lang].subheading }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="content-sidebar">
+                    <!-- Address -->
+                    <div class="address mt-0">
+                        <a href="tel:+40786948559">
+                            <h6><img src="/assets/img/icons/phone-call.png" alt=""> +40 786 948 559</h6>
+                        </a>
+                        <a href="mailto:info@bb-imo.ro">
+                            <h6><img src="/assets/img/icons/envelope.png" alt=""> info@bb-imo.ro</h6>
+                        </a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Splaiul+David+Praporgescu+17,+Arad" target="_blank">
+                            <h6><img src="/assets/img/icons/location.png" alt=""> Str. General David Praporgescu nr.17, ap.1 - 310183 - Arad</h6>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Contact Form Area -->
+            <div class="col-12 col-lg-8">
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="text" id="contact-name" placeholder="{{ site.data.contact-page.[page.lang].placeholders.name }}">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="number" id="contact-number" placeholder="{{ site.data.contact-page.[page.lang].placeholders.phone }}">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="contact-email" placeholder="{{ site.data.contact-page.[page.lang].placeholders.mail }}">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="{{ site.data.contact-page.[page.lang].placeholders.message }}"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn">{{ site.data.contact-page.[page.lang].button }}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- START Google Maps -->
+<section id="scorpius-map">
+    <div class="container-fluid">
+        <div class="row wow fadeIn" data-wow-delay="0.25s">
+            <section id="cd-google-map">
+                <div id="google-container"></div>
+                <div id="cd-zoom-in"></div>
+                <div id="cd-zoom-out"></div>
+                <div id="cd-navigate"></div>
+            </section>
+        </div>
+    </div>
+</section>
+<!-- END Google Maps -->

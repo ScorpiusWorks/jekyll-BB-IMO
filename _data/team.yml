@@ -1,0 +1,33 @@
+en:
+    title: Meet The Team
+    subtitle: Suspendisse dictum enim sit amet libero
+
+ro:
+    title: Cunoaște echipa
+    subtitle: Suspendisse dictum enim sit amet libero
+
+people:
+    -   id: 1
+        name: Bernd Böse
+        image: /assets/img/bg-img/team1.jpg
+        phone: +40 744 301 305
+        mail: bboese@bb-imo.ro
+        position:
+            en: Owner
+            ro: Proprietar
+    -   id: 2
+        name: Lolita Mallinger
+        image: /assets/img/bg-img/team2.jpg
+        phone: +40 734 121 038
+        mail: lmallinger@bb-imo.ro
+        position:
+            en: Consultant
+            ro: Consultant
+    -   id: 3
+        name: Daniela Zamfir
+        image: /assets/img/bg-img/team3.jpg
+        phone: +40 786 948 559
+        mail: dzamfir@bb-imo.ro
+        position:
+            en: Administrator
+            ro: Administrator

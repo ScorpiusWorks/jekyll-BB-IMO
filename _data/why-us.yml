@@ -1,0 +1,44 @@
+en:
+    title: Why us?
+    subtitle: Awesome subtitle.
+    button: Find out more
+    link: /about-us.html
+    features:
+        -   title: German quality
+            icon: /assets/img/icons/home3.png
+            text: Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.
+        -   title: Detailed customization
+            icon: /assets/img/icons/rent.png
+            text: Dolor sit amet, consecte tuer elit, sed diam nonummy nibh euismod tincidunt ut ldolore magna.
+        -   title: Extended warranty
+            icon: /assets/img/icons/flat.png
+            text: Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.
+    facts:
+        -   nr: 14
+            txt: Years of experience
+        -   nr: 36
+            txt: Happy clients
+        -   nr: 5
+            txt: Finished projects
+ro:
+    title: De ce noi?
+    subtitle: Subtitlu grozav.
+    button: Află mai multe
+    link: /ro/about-us.html
+    features:
+        -   title: Calitate germană
+            icon:
+            text: Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.
+        -   title: Personalizare detaliată
+            icon:
+            text: Dolor sit amet, consecte tuer elit, sed diam nonummy nibh euismod tincidunt ut ldolore magna.
+        -   title: Garantie extinsă
+            icon:
+            text: Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.
+    facts:
+        -   nr: 14
+            txt: Ani de experiență
+        -   nr: 36
+            txt: Clienți încântați
+        -   nr: 5
+            txt: Proiecte finalizate

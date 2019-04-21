@@ -1,0 +1,15 @@
+en:
+    -   image: /assets/img/bg-img/hero1.jpg
+        text: Find your home
+    -   image: /assets/img/bg-img/hero2.jpg
+        text: Find your dream house
+    -   image: /assets/img/bg-img/hero3.jpg
+        text: Find your perfect home
+
+ro:
+    -   image: /assets/img/bg-img/hero1.jpg
+        text: Găsește noul tău cămin
+    -   image: /assets/img/bg-img/hero2.jpg
+        text: Găsește locuința de vis
+    -   image: /assets/img/bg-img/hero3.jpg
+        text: Găsește locuința perfectă

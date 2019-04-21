@@ -1,0 +1,46 @@
+en:
+    title: Find your home
+
+    cities:
+        - All cities
+        - Arad
+        - Timisoara
+        - München
+        - Stuttgart
+
+    categories:
+        - All categories
+        - Apartment
+        - House
+        - Commercial space
+
+    types:
+        - All types
+        - For sale
+        - For rent
+
+    button: Search
+
+
+ro:
+    title: Găsește aici
+
+    cities:
+        - Toate orașele
+        - Arad
+        - Timișoara
+        - München
+        - Stuttgart
+
+    categories:
+        - Toate categoriile
+        - Apartament
+        - Casă
+        - Spațiu comercial
+
+    types:
+        - Toate tipurile
+        - De vânzare
+        - De închiriat
+
+    button: Caută

@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<!-- ##### Hero Area Start ##### -->
+{% include hero-slider.html %}
+<!-- ##### Hero Area End ##### -->
+
+<!-- ##### Advance Search Area Start ##### -->
+{% include search.html %}
+<!-- ##### Advance Search Area End ##### -->
+
+<!-- ##### Featured Properties Area Start ##### -->
+<section class="featured-properties-area section-padding-100-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading wow fadeInUp">
+                    <h2>{{ site.data.featured-properties[page.lang].title }}</h2>
+                    <p>{{ site.data.featured-properties[page.lang].subtitle }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            {% include featured-properties.html %}
+        </div>
+
+    </div>
+</section>
+<!-- ##### Featured Properties Area End ##### -->
+
+<!-- ##### Call To Action Area Start ##### -->
+{% include call-to-action.html %}
+<!-- ##### Call To Action Area End ##### -->
+
+<!-- ##### Testimonials Area Start ##### -->
+{% include why-us.html %}
+<!-- ##### Testimonials Area End ##### -->
+
+<!-- ##### Editor Area Start ##### -->
+{% include editor.html %}
+<!-- ##### Editor Area End ##### -->

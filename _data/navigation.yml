@@ -1,0 +1,27 @@
+en:
+    home:
+        name: Home
+        link: /
+    about:
+        name: About
+        link: /about.html
+    properties:
+        name: Properties
+        link: /properties.html
+    contact:
+        name: Contact
+        link: /contact.html
+
+ro:
+    home:
+        name: Acasă
+        link: /ro/
+    about:
+        name: Despre noi
+        link: /ro/about.html
+    properties:
+        name: Proprietăți
+        link: /ro/properties.html
+    contact:
+        name: Contact
+        link: /ro/contact.html

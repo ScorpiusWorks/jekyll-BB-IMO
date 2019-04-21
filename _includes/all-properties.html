@@ -1,0 +1,52 @@
+<!-- Featured Properties -->
+{% for listing in site.listings %}
+    {% if page.ref != "about" %}
+    <div class="col-12 col-md-6 col-xl-4">
+        <a href="{{ listing.[page.lang].link }}">
+            <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="100ms">
+    {% else %}
+        <a href="{{ listing.[page.lang].link }}">
+            <div class="single-featured-property">
+    {% endif %}
+
+                <!-- Property Thumbnail -->
+                <div class="property-thumb">
+                    <img src="{{ listing.image }}" alt="">
+
+                    <div class="tag">
+                        <span>{{ listing.[page.lang].type }}</span>
+                    </div>
+                    <div class="list-price">
+                        <p>{{ listing.price }}</p>
+                    </div>
+                </div>
+                <!-- Property Content -->
+                <div class="property-content">
+                    <h5>{{ listing.[page.lang].name }}</h5>
+                    <p class="location"><img src="/assets/img/icons/location.png" alt="">{{ listing.[page.lang].location }}</p>
+                    <p>{{ listing.[page.lang].description }}</p>
+                    <div class="property-meta-data d-flex align-items-end justify-content-between">
+                        <div class="bedroom">
+                            <img src="/assets/img/icons/bed.png" alt="">
+                            <span>{{ listing.bedrooms }}</span>
+                        </div>
+                        <div class="bathroom">
+                            <img src="/assets/img/icons/bathtub.png" alt="">
+                            <span>{{ listing.bathrooms }}</span>
+                        </div>
+                        <div class="garage">
+                            <img src="/assets/img/icons/car.png" alt="">
+                            <span>{{ listing.garages }}</span>
+                        </div>
+                        <div class="space">
+                            <img src="/assets/img/icons/space.png" alt="">
+                            <span>{{ listing.space }} m2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    {% if page.ref != "about" %}
+    </div>
+    {% endif %}
+{% endfor %}

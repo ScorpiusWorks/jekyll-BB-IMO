@@ -1,0 +1,18 @@
+en:
+    heading: Get in touch
+    subheading: Don't hesitate to contact us, we are always ready to answer your questions!
+    button: Send message
+    placeholders:
+        name: Your name
+        phone: Your phone number
+        mail: Your e-mail address
+        message: Your message
+ro:
+    heading: Ia legătura cu noi
+    subheading: Nu ezita să ne scrii, suntem tot timpul pregătiți să îți răspundem la întrebări!
+    button: Trimite mesajul
+    placeholders:
+        name: Numele tău
+        phone: Numărul tău de telefon
+        mail: Adresa ta de e-mail
+        message: Mesajul tău

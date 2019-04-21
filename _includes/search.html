@@ -1,0 +1,89 @@
+<div class="search-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="advanced-search-form">
+
+                    <!-- Search Title -->
+                    <div class="search-title">
+                        <p>{{ site.data.search-options.[page.lang].title }}</p>
+                    </div>
+                    <!-- Search Form -->
+                    <form action="#" method="post" id="advanceSearch">
+                        <div class="row">
+
+                            <div class="col-12 col-md-4">
+                                <div class="form-group">
+                                    <select class="form-control" id="cities">
+                                        {% for item in site.data.search-options.[page.lang].cities %}
+                                        <option>{{ item }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <div class="form-group">
+                                    <select class="form-control" id="catagories">
+                                        {% for item in site.data.search-options.[page.lang].categories %}
+                                        <option>{{ item }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <div class="form-group">
+                                    <select class="form-control" id="type">
+                                        {% for item in site.data.search-options.[page.lang].types %}
+                                        <option>{{ item }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <!-- Space Range -->
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="slider-range">
+                                    <div data-min="20" data-max="500" data-unit=" m2" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="20" data-value-max="500">
+                                        <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
+                                        <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                                        <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                                    </div>
+                                    <div class="range text-center">20 m2 - 500 m2</div>
+                                </div>
+                            </div>
+
+                            <!-- Price Range -->
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="slider-range">
+                                    <div data-min="15000" data-max="99000" data-unit=" EUR" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="15000" data-value-max="99000">
+                                        <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
+                                        <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                                        <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                                    </div>
+                                    <div class="range text-center">15000 EUR - 99000 EUR</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12 d-flex justify-content-center">
+                              <!-- Submit -->
+                              <div class="form-group mb-0">
+                                  <button type="submit" class="btn btn">{{ site.data.search-options.[page.lang].button }}</button>
+                              </div>
+                          </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

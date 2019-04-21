@@ -1,0 +1,31 @@
+en:
+    company: Company
+    registration: Registration Number (VAT)
+    euid: European Unique ID
+    useful: Useful links
+    links:
+        -   name: Architect
+            url: '#'
+        -   name: Authorizations
+            url: '#'
+        -   name: FAQ
+            url: '#'
+        -   name: GDPR
+            url: '#'
+    touch: Get in touch
+
+ro:
+    company: Companie
+    registration: Cod de Identificare Fiscală (TVA)
+    euid: ID Unic European
+    useful: Linkuri utile
+    links:
+        -   name: Arhitect
+            url: '#'
+        -   name: Autorizații
+            url: '#'
+        -   name: FAQ
+            url: '#'
+        -   name: GDPR
+            url: '#'
+    touch: Ia legătura cu noi
