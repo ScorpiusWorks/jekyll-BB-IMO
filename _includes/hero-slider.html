@@ -8,7 +8,11 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
                         <div class="hero-slides-content">
+                            {% if page.ref == "home" %}
                             <h2 data-animation="fadeInUp" data-delay="100ms">{{ slide.text }}</h2>
+                            {% else %}
+                            <h2 data-animation="fadeInUp" data-delay="100ms">{{ page.title }}</h2>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

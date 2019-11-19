@@ -2,10 +2,10 @@
 {% for listing in site.listings %}
     {% if page.ref != "about" %}
     <div class="col-12 col-md-6 col-xl-4">
-        <a href="{{ listing.[page.lang].link }}">
+        <a href="{{ listing[page.lang].link }}">
             <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="100ms">
     {% else %}
-        <a href="{{ listing.[page.lang].link }}">
+        <a href="{{ listing[page.lang].link }}">
             <div class="single-featured-property">
     {% endif %}
 
@@ -14,7 +14,7 @@
                     <img src="{{ listing.image }}" alt="">
 
                     <div class="tag">
-                        <span>{{ listing.[page.lang].type }}</span>
+                        <span>{{ listing[page.lang].type }}</span>
                     </div>
                     <div class="list-price">
                         <p>{{ listing.price }}</p>
@@ -22,9 +22,9 @@
                 </div>
                 <!-- Property Content -->
                 <div class="property-content">
-                    <h5>{{ listing.[page.lang].name }}</h5>
-                    <p class="location"><img src="/assets/img/icons/location.png" alt="">{{ listing.[page.lang].location }}</p>
-                    <p>{{ listing.[page.lang].description }}</p>
+                    <h5>{{ listing[page.lang].name }}</h5>
+                    <p class="location"><img src="/assets/img/icons/location.png" alt="">{{ listing[page.lang].location }}</p>
+                    <p>{{ listing[page.lang].description }}</p>
                     <div class="property-meta-data d-flex align-items-end justify-content-between">
                         <div class="bedroom">
                             <img src="/assets/img/icons/bed.png" alt="">

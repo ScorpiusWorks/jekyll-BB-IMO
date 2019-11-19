@@ -12,12 +12,13 @@ layout: default
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="section-heading text-left wow fadeInUp" data-wow-delay="250ms">
-                    <h2>{{ site.data.about-page[page.lang].heading }}</h2>
-                    <p>{{ site.data.about-page[page.lang].subheading }}</p>
+                    <h2>{{ site.data.about[page.lang].heading }}</h2>
+                    <p>{{ site.data.about[page.lang].subheading }}</p>
                 </div>
                 <div class="about-content">
-                    <img class="wow fadeInUp" data-wow-delay="350ms" src="/assets/img/bg-img/about.jpg" alt="">
-                    <p class="wow fadeInUp" data-wow-delay="450ms">{{ site.data.about-page[page.lang].description }}</p>
+                    <img class="wow fadeInUp" data-wow-delay="350ms" src="/assets/img/bg-img/bb-imo-residence-4.jpg"
+                        alt="">
+                    <p class="wow fadeInUp" data-wow-delay="450ms">{{ site.data.about[page.lang].description }}</p>
                 </div>
             </div>
 
@@ -27,9 +28,10 @@ layout: default
                     <p>{{ site.data.featured-properties[page.lang].subtitle }}</p>
                 </div>
 
-                <div class="featured-properties-slides owl-carousel wow fadeInUp" data-wow-delay="350ms">
+                <!-- Removed owl-carousel class to stop the slider until we have more than one project...to be added back then -->
+                <div class="featured-properties-slides wow fadeInUp" data-wow-delay="350ms">
 
-                    {% include featured-properties.html %}
+                    {% include all-projects.html %}
 
                 </div>
             </div>
@@ -43,5 +45,5 @@ layout: default
 <!-- ##### Call To Action Area End ##### -->
 
 <!-- ##### Meet The Team Area Start ##### -->
-{% include team.html %}
+
 <!-- ##### Meet The Team Area End ##### -->

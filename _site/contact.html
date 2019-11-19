@@ -21,7 +21,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/ico/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/ico/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/ico/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/ico/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/ico/favicon-16x16.png">
@@ -47,7 +47,7 @@
 
     <!-- Top Header Area -->
     <div class="top-header-area">
-        <div class="h-100 d-md-flex justify-content-between align-items-center">
+        <div class="h-100 d-flex justify-content-between align-items-center">
             <div class="email-address">
                 <a href="mailto:info@bb-imo.ro">info@bb-imo.ro</a>
             </div>
@@ -69,7 +69,7 @@
             <nav class="classy-navbar justify-content-between" id="southNav">
 
                 <!-- Logo -->
-                <a class="nav-brand" href="/"><img src="/assets/img/Logo-BB-IMO-Arad-Real-Estate-Imobiliare-300x200-min.png" alt=""></a>
+                <a class="nav-brand" href="/"><img src="/assets/img/Logo-BB-IMO-Arad-Real-Estate.svg" alt=""></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -89,41 +89,52 @@
                         <ul>
                             
                             <li>
-                                <a href="/">Home</a>
+                                <a href="/">Acasă</a>
+                                
                             </li>
                             
                             <li>
-                                <a href="/about.html">About</a>
+                                <a href="/about.html">Despre noi</a>
+                                
                             </li>
                             
                             <li>
-                                <a href="/properties.html">Properties</a>
+                                <a href="/properties.html">Proprietăți</a>
+                                
+                                <ul class="dropdown">
+                                    
+                                    <li><a href='/properties/bb-imo-residence.html'>BB-Imo Residence</a></li>
+                                    
+                                </ul>
+                                
                             </li>
                             
                             <li>
                                 <a href="/contact.html">Contact</a>
+                                
                             </li>
                             
 
                             <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
                                 <ul class="dropdown">
                                     
-                                        <li><a href="ro/contact.html">Română</a></li>
+                                    <li><a href='/en/contact.html'>English</a></li>
                                     
                                 </ul>
                             </li>
                         </ul>
 
                         <!-- Search Form -->
-                        <div class="search-form">
+                        <!-- <div class="search-form">
                             <form action="#" method="post">
                                 <input type="search" name="search" id="search" placeholder="Search Anything ...">
                                 <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </form>
-                        </div>
+                        </div> -->
 
                         <!-- Search Button -->
-                        <a href="#" class="searchbtn"><i class="fa" aria-hidden="true"></i></a>
+                        <!-- <a href="#" class="searchbtn"><i class="fa" aria-hidden="true"></i></a> -->
+
                     </div>
                     <!-- Nav End -->
                 </div>
@@ -131,11 +142,10 @@
         </div>
     </div>
 </header>
-
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
-<section class="breadcumb-area bg-img" style="background-image: url(/assets/img/bg-img/hero1.jpg);">
+<section class="breadcumb-area bg-img" style="background-image: url(/assets/img/bg-img/bb-imo-residence-3b.jpg);">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12">
@@ -149,13 +159,13 @@
 
 <!-- ##### Breadcumb Area End ##### -->
 
-<section class="contact-area section-padding-100">
+<section class="contact-area section-padding-100 wow fadeIn" data-wow-delay="0.25s"">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="section-heading">
-                    <h2>Get in touch</h2>
-                    <p>Don't hesitate to contact us, we are always ready to answer your questions!</p>
+                    <h2>Ia legătura cu noi</h2>
+                    <p>Nu ezita să ne scrii, suntem tot timpul pregătiți să îți răspundem la întrebări!</p>
                 </div>
             </div>
         </div>
@@ -182,20 +192,24 @@
             <!-- Contact Form Area -->
             <div class="col-12 col-lg-8">
                 <div class="contact-form">
-                    <form action="#" method="post">
+                    <form name="sentMessage" id="contactForm" novalidate>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="text" id="contact-name" placeholder="Your name">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Numele tău" required="required">
+                              <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group">
-                            <input type="number" class="form-control" name="number" id="contact-number" placeholder="Your phone number">
+                            <input type="tel" class="form-control" name="telephone" id="telephone" placeholder="Numărul tău de telefon" required="required">
+                              <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="contact-email" placeholder="Your e-mail address">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Adresa ta de e-mail" required="required">
+                              <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                            <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Mesajul tău" required="required"></textarea>
                         </div>
-                        <button type="submit" class="btn btn">Send message</button>
+                        <div id="success"></div>
+                        <button type="submit" class="btn btn">Trimite mesajul</button>
                     </form>
                 </div>
             </div>
@@ -204,64 +218,63 @@
 </section>
 
 <!-- START Google Maps -->
-<section id="scorpius-map">
-    <div class="container-fluid">
-        <div class="row wow fadeIn" data-wow-delay="0.25s">
-            <section id="cd-google-map">
-                <div id="google-container"></div>
-                <div id="cd-zoom-in"></div>
-                <div id="cd-zoom-out"></div>
-                <div id="cd-navigate"></div>
-            </section>
+<div class="row no-gutters wow fadeIn" data-wow-delay="0.25s">
+    <div class="col-12">
+        <div id="cd-google-map">
+            <div id="google-container"></div>
+            <div id="cd-zoom-in"></div>
+            <div id="cd-zoom-out"></div>
+            <div id="cd-navigate"></div>
         </div>
     </div>
-</section>
+</div>
 <!-- END Google Maps -->
 
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area section-padding-100-0 bg-img gradient-background-overlay" style="background-image: url(/assets/img/bg-img/cta.jpg);">
+    <footer class="footer-area section-padding-100-0 bg-img gradient-background-overlay"
+    style="background-image: url(/assets/img/bg-img/cta.jpg);">
     <!-- Main Footer Area -->
     <div class="main-footer-area">
         <div class="container">
             <div class="row justify-content-between">
-
-              <!-- Single Footer Widget -->
-              <div class="col-12 col-lg-4 col-xl-4 text-center">
-                  <div class="footer-widget-area mb-100">
-                      <!-- Widget Title -->
-                      <div class="widget-title">
-                          <h6>Company</h6>
-                      </div>
-                      <!-- <div class="footer-logo my-4">
-                          <img src="/assets/img/Logo-BB-IMO-Arad-Real-Estate-Imobiliare-300x200-min.png" alt="">
-                      </div> -->
-                      <p><strong>BB IMO S.R.L.</strong></p>
-                      <p>Registration Number (VAT)</p>
-                      <p>RO40744786</p>
-                      <p>European Unique ID</p>
-                      <p>ROONRC.J2/526/2019</p>
-                  </div>
-              </div>
 
                 <!-- Single Footer Widget -->
                 <div class="col-12 col-lg-4 col-xl-4 text-center">
                     <div class="footer-widget-area mb-100">
                         <!-- Widget Title -->
                         <div class="widget-title">
-                            <h6>Useful links</h6>
+                            <h6>Companie</h6>
+                        </div>
+                        <!-- <div class="footer-logo my-4">
+                          <img src="/assets/img/Logo-BB-IMO-Arad-Real-Estate-Imobiliare-300x200-min.png" alt="">
+                      </div> -->
+                        <p><strong>BB IMO S.R.L.</strong></p>
+                        <p>Cod de Identificare Fiscală (TVA)</p>
+                        <p>RO40744786</p>
+                        <p>ID Unic European</p>
+                        <p>ROONRC.J2/526/2019</p>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-lg-4 col-xl-4 text-center">
+                    <div class="footer-widget-area mb-100">
+                        <!-- Widget Title -->
+                        <div class="widget-title">
+                            <h6>Linkuri utile</h6>
                         </div>
                         <!-- Nav -->
                         <ul class="useful-links-nav align-items-center">
                             <li>
                                 
-                                <a href="#">Architect</a>
+                                <a href="https://www.facebook.com/arhitecturaarad" target="_blank">Arhitect</a>
                                 
-                                <a href="#">Authorizations</a>
+                                <a href="#" target="_blank">Politica de cookies</a>
                                 
-                                <a href="#">FAQ</a>
+                                <a href="/assets/docs/GDPR.pdf" target="_blank">GDPR RO</a>
                                 
-                                <a href="#">GDPR</a>
+                                <a href="/assets/docs/GDPR EN.pdf" target="_blank">GDPR EN</a>
                                 
                             </li>
                         </ul>
@@ -273,7 +286,7 @@
                     <div class="footer-widget-area mb-100">
                         <!-- Widget Title -->
                         <div class="widget-title">
-                            <h6>Get in touch</h6>
+                            <h6>Ia legătura cu noi</h6>
                         </div>
                         <!-- Office Hours -->
                         <!-- <div class="weekly-office-hours">
@@ -291,8 +304,10 @@
                             <a href="mailto:info@bb-imo.ro">
                                 <h6><img src="/assets/img/icons/envelope.png" alt=""> info@bb-imo.ro</h6>
                             </a>
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=Splaiul+David+Praporgescu+17,+Arad" target="_blank">
-                                <h6><img src="/assets/img/icons/location.png" alt=""> Str. General David Praporgescu nr.17, ap.1 - 310183 - Arad</h6>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Splaiul+David+Praporgescu+17,+Arad"
+                                target="_blank">
+                                <h6><img src="/assets/img/icons/location.png" alt=""> Str. General David Praporgescu
+                                    nr.17, ap.1 - 310183 - Arad</h6>
                             </a>
                         </div>
                     </div>
@@ -304,10 +319,13 @@
 
     <!-- Copyright Text -->
     <div class="copywrite-text text-center">
-        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved @ BB-IMO</p> <p> Crafted with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://scorpiusworks.com" target="_blank">ScorpiusWorks</a></p>
+        <p>Copyright &copy;<script>
+                document.write(new Date().getFullYear());
+            </script> All rights reserved @ BB IMO S.R.L.</p>
+        <p> Crafted with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                href="https://scorpiusworks.com/#contact" target="_blank">ScorpiusWorks</a></p>
     </div>
 </footer>
-
     <!-- ##### Footer Area End ##### -->
 
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
@@ -322,11 +340,268 @@
     <script src="/assets/js/jquery-ui.min.js"></script>
     <!-- Active js -->
     <script src="/assets/js/active.js"></script>
-    <!-- Google Maps js -->
-    <script src="/assets/js/map-active.js"></script>
-    <!-- Google Maps API key -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-MirZ17KO34PNO1DG0iBQqfCcAwQuXPY"></script>
 
+    <!-- Cookie bar -->
+    <script type="text/javascript"
+        src="/assets/cookie-bar/cookiebar-latest.min.js?theme=white&always=1&noGeoIp=1&refreshPage=1&remember=Autodetect">
+    </script>
+
+    
+    <!-- ##### Google Map ##### -->
+    <script>
+    // Initialize and add the map
+    function initMap() {
+        //set your google maps parameters
+        var latitude = 46.178711,
+            longitude = 21.324461,
+            map_zoom = 17;
+
+        //google map custom marker icon - .png fallback for IE11
+        var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
+        var marker_url = (is_internetExplorer11) ? '/assets/img/cd-icon-location.png' : '/assets/img/cd-icon-location.png';
+
+        //define the basic color of your map, plus a value for saturation and brightness
+        var main_color = '#223a5e',
+            saturation_value = 0,
+            brightness_value = 20;
+
+        //we define here the style of the map
+        var style = [{
+                //set saturation for the labels on the map
+                elementType: "labels",
+                stylers: [{
+                    saturation: saturation_value
+                }]
+            }, { //poi stands for point of interest - don't show these lables on the map
+                featureType: "poi",
+                elementType: "labels",
+                stylers: [{
+                    visibility: "on"
+                }]
+            }, {
+                //don't show highways lables on the map
+                featureType: 'road.highway',
+                elementType: 'labels',
+                stylers: [{
+                    visibility: "on"
+                }]
+            }, {
+                //don't show local road lables on the map
+                featureType: "road.local",
+                elementType: "labels.icon",
+                stylers: [{
+                    visibility: "on"
+                }]
+            }, {
+                //don't show arterial road lables on the map
+                featureType: "road.arterial",
+                elementType: "labels.icon",
+                stylers: [{
+                    visibility: "on"
+                }]
+            }, {
+                //don't show road lables on the map
+                featureType: "road",
+                elementType: "geometry.stroke",
+                stylers: [{
+                    visibility: "on"
+                }]
+            },
+            //style different elements on the map
+            {
+                featureType: "transit",
+                elementType: "geometry.fill",
+                stylers: [{
+                    hue: main_color
+                }, {
+                    visibility: "on"
+                }, {
+                    lightness: brightness_value
+                }, {
+                    saturation: saturation_value
+                }]
+            }, {
+                featureType: "poi",
+                elementType: "geometry.fill",
+                stylers: [{
+                    hue: main_color
+                }, {
+                    visibility: "on"
+                }, {
+                    lightness: brightness_value
+                }, {
+                    saturation: saturation_value
+                }]
+            }, {
+                featureType: "poi.government",
+                elementType: "geometry.fill",
+                stylers: [{
+                    hue: main_color
+                }, {
+                    visibility: "on"
+                }, {
+                    lightness: brightness_value
+                }, {
+                    saturation: saturation_value
+                }]
+            }, {
+                featureType: "poi.attraction",
+                elementType: "geometry.fill",
+                stylers: [{
+                    hue: main_color
+                }, {
+                    visibility: "on"
+                }, {
+                    lightness: brightness_value
+                }, {
+                    saturation: saturation_value
+                }]
+            }, {
+                featureType: "poi.business",
+                elementType: "geometry.fill",
+                stylers: [{
+                    hue: main_color
+                }, {
+                    visibility: "on"
+                }, {
+                    lightness: brightness_value
+                }, {
+                    saturation: saturation_value
+                }]
+            }, {
+                featureType: "transit",
+                elementType: "geometry.fill",
+                stylers: [{
+                    hue: main_color
+                }, {
+                    visibility: "on"
+                }, {
+                    lightness: brightness_value
+                }, {
+                    saturation: saturation_value
+                }]
+            }, {
+                featureType: "transit.station",
+                elementType: "geometry.fill",
+                stylers: [{
+                    hue: main_color
+                }, {
+                    visibility: "on"
+                }, {
+                    lightness: brightness_value
+                }, {
+                    saturation: saturation_value
+                }]
+            }, {
+                featureType: "landscape",
+                stylers: [{
+                    hue: main_color
+                }, {
+                    visibility: "on"
+                }, {
+                    lightness: brightness_value
+                }, {
+                    saturation: saturation_value
+                }]
+
+            }, {
+                featureType: "road",
+                elementType: "geometry.fill",
+                stylers: [{
+                    hue: main_color
+                }, {
+                    visibility: "on"
+                }, {
+                    lightness: brightness_value
+                }, {
+                    saturation: saturation_value
+                }]
+            }, {
+                featureType: "road.highway",
+                elementType: "geometry.fill",
+                stylers: [{
+                    hue: main_color
+                }, {
+                    visibility: "on"
+                }, {
+                    lightness: brightness_value
+                }, {
+                    saturation: saturation_value
+                }]
+            }, {
+                featureType: "water",
+                elementType: "geometry",
+                stylers: [{
+                    hue: main_color
+                }, {
+                    visibility: "on"
+                }, {
+                    lightness: brightness_value
+                }, {
+                    saturation: saturation_value
+                }]
+            }
+        ];
+
+        //set google map options
+        var map_options = {
+            center: new google.maps.LatLng(latitude, longitude),
+            zoom: map_zoom,
+            panControl: false,
+            zoomControl: false,
+            mapTypeControl: false,
+            streetViewControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false,
+            styles: style,
+        }
+        //inizialize the map
+        var map = new google.maps.Map(document.getElementById('google-container'), map_options);
+        //add a custom marker to the map
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(latitude, longitude),
+            map: map,
+            visible: true,
+            icon: marker_url,
+        });
+
+        //add custom buttons for the zoom-in/zoom-out on the map
+        function CustomZoomControl(controlDiv, map) {
+            //grab the zoom elements from the DOM and insert them in the map
+            var controlUIzoomIn = document.getElementById('cd-zoom-in'),
+                controlUIzoomOut = document.getElementById('cd-zoom-out'),
+                controlUInavigate = document.getElementById('cd-navigate');
+            controlDiv.appendChild(controlUIzoomIn);
+            controlDiv.appendChild(controlUIzoomOut);
+            controlDiv.appendChild(controlUInavigate);
+
+            // Setup the click event listeners and zoom-in or out according to the clicked element
+            google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
+                map.setZoom(map.getZoom() + 1)
+            });
+            google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
+                map.setZoom(map.getZoom() - 1)
+            });
+            google.maps.event.addDomListener(controlUInavigate, 'click', function() {
+                window.open("https://www.google.com/maps/dir/?api=1&destination=Splaiul+David+Praporgescu+17,+Arad");
+            });
+        }
+
+        var zoomControlDiv = document.createElement('div');
+        var zoomControl = new CustomZoomControl(zoomControlDiv, map);
+
+        //insert the zoom div on the top left of the map
+        map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
+    }
+</script>
+
+<script src="/assets/js/contact_me.js" type="text/javascript"></script>
+<script src="/assets/js/jqBootstrapValidation.js" type="text/javascript"></script> 
+
+<!-- Google Maps API key -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSdYErOXyJHRqfbpcabT6bF8AkXeIdM78&callback=initMap" type="text/javascript"></script>
+
+    
 </body>
 
 </html>

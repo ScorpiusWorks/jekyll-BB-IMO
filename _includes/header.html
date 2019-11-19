@@ -2,7 +2,7 @@
 
     <!-- Top Header Area -->
     <div class="top-header-area">
-        <div class="h-100 d-md-flex justify-content-between align-items-center">
+        <div class="h-100 d-flex justify-content-between align-items-center">
             <div class="email-address">
                 <a href="mailto:info@bb-imo.ro">info@bb-imo.ro</a>
             </div>
@@ -24,7 +24,7 @@
             <nav class="classy-navbar justify-content-between" id="southNav">
 
                 <!-- Logo -->
-                <a class="nav-brand" href="/"><img src="/assets/img/Logo-BB-IMO-Arad-Real-Estate-Imobiliare-300x200-min.png" alt=""></a>
+                <a class="nav-brand" href="/"><img src="/assets/img/Logo-BB-IMO-Arad-Real-Estate.svg" alt=""></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -42,33 +42,41 @@
                     <!-- Nav Start -->
                     <div class="classynav">
                         <ul>
-                            {% for item in site.data.navigation.[page.lang] %}
+                            {% for item in site.data.navigation[page.lang] %}
                             <li>
                                 <a href="{{ item[1].link }}">{{ item[1].name }}</a>
+                                {% if item[1].link contains "properties" %}
+                                <ul class="dropdown">
+                                    {% for prop in site.data.navigation.props[page.lang] %}
+                                    <li><a href='{{ prop.link }}'>{{ prop.name }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
                             </li>
                             {% endfor %}
 
                             <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
                                 <ul class="dropdown">
-                                    {% if page.url contains "/ro/" %}
-                                        <li><a href='{{ page.url | remove: "ro/"}}'>English</a></li>
+                                    {% if page.url contains "/en/" %}
+                                    <li><a href='{{ page.url | remove: "/en"}}'>Română</a></li>
                                     {% else %}
-                                        <li><a href="{{ page.url | prepend: 'ro'}}">Română</a></li>
+                                    <li><a href='{{ page.url | prepend: "/en"}}'>English</a></li>
                                     {% endif %}
                                 </ul>
                             </li>
                         </ul>
 
                         <!-- Search Form -->
-                        <div class="search-form">
+                        <!-- <div class="search-form">
                             <form action="#" method="post">
                                 <input type="search" name="search" id="search" placeholder="Search Anything ...">
                                 <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </form>
-                        </div>
+                        </div> -->
 
                         <!-- Search Button -->
-                        <a href="#" class="searchbtn"><i class="fa" aria-hidden="true"></i></a>
+                        <!-- <a href="#" class="searchbtn"><i class="fa" aria-hidden="true"></i></a> -->
+
                     </div>
                     <!-- Nav End -->
                 </div>

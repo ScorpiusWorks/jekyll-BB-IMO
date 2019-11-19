@@ -1,0 +1,25 @@
+en:
+  heading: Build your perfect home with us
+  subheading: Our goal is your happiness!
+  description: We are a new company on the market, which is privately owned and specialized in the construction of apartment houses. Together with renowned architects and construction companies from the region of Arad, we develop residential buildings and apartment buildings, which we can also produce according to your individual wishes. We only sell our own projects so we can make sure everything is done properly. Our goal is that you feel comfortable, have a home, and not just buy a property. We involve you as early as possible in the development to make this possible.
+  home-title: Who are we
+  home-features:
+    - id: 1
+      text: "German quality"
+    - id: 2
+      text: "Detailed customization"
+    - id: 3
+      text: "Flexible financing"
+
+ro:
+  heading: Cu noi îți construiești locuința ideală
+  subheading: Țelul nostru este fericirea ta!
+  description: Suntem o companie nouă pe piață, cu capital privat, specializată în construcția de apartamente. Împreună cu renumiți arhitecți și firme de construcții din regiunea Arad, dezvoltăm clădiri rezidențiale și clădiri de apartamente, pe care le putem produce și în funcție de dorințele dumneavoastră individuale. Vindem doar propriile noastre proiecte, astfel încât să ne asigurăm că totul se face în mod corespunzător. Scopul nostru este să vă simțiți confortabil, să aveți un cămin și nu doar să cumpărați o proprietate. Vă implicăm cât mai devreme posibil în dezvoltarea proiectului pentru ca viziunea aceasta să devină posibilă.
+  home-title: Cine suntem noi
+  home-features:
+    - id: 1
+      text: "Calitate germană"
+    - id: 2
+      text: "Personalizare detaliată"
+    - id: 3
+      text: "Finanțare flexibilă"

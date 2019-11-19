@@ -1,8 +1,8 @@
-name: My Jekyll Website
+name: BB-Imo Real Estate
 title: BB-Imo Real Estate
 collections:
     listings:
 plugins:
   - jekyll-sitemap
-# livereload: true
+livereload: true
 # verbose: true

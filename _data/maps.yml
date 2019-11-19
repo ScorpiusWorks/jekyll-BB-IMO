@@ -1,0 +1,9 @@
+hq:
+  latitude: 46.178711
+  longitude: 21.324461
+  navlink: https://www.google.com/maps/dir/?api=1&destination=Splaiul+David+Praporgescu+17,+Arad
+
+residence:
+  latitude: 46.153841
+  longitude: 21.320612
+  navlink: https://www.google.com/maps/dir/?api=1&destination=Strada+Constituției+3,+Arad

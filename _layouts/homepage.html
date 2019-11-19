@@ -7,28 +7,11 @@ layout: default
 <!-- ##### Hero Area End ##### -->
 
 <!-- ##### Advance Search Area Start ##### -->
-{% include search.html %}
 <!-- ##### Advance Search Area End ##### -->
 
-<!-- ##### Featured Properties Area Start ##### -->
-<section class="featured-properties-area section-padding-100-50">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-heading wow fadeInUp">
-                    <h2>{{ site.data.featured-properties[page.lang].title }}</h2>
-                    <p>{{ site.data.featured-properties[page.lang].subtitle }}</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            {% include featured-properties.html %}
-        </div>
-
-    </div>
-</section>
-<!-- ##### Featured Properties Area End ##### -->
+<!-- ##### Company info Start ##### -->
+{% include company-info.html %}
+<!-- ##### Company info End ##### -->
 
 <!-- ##### Call To Action Area Start ##### -->
 {% include call-to-action.html %}
@@ -39,5 +22,4 @@ layout: default
 <!-- ##### Testimonials Area End ##### -->
 
 <!-- ##### Editor Area Start ##### -->
-{% include editor.html %}
 <!-- ##### Editor Area End ##### -->

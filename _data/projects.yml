@@ -1,0 +1,64 @@
+list:
+  - name: BB Imo Residence
+    thumbnail: /assets/img/bb-imo-residence/bb-imo-residence-thumbnail.jpg
+    en:
+      caption: Apartments for sale
+      link: /properties/bb-imo-residence.html
+      heading: Why BB-Imo Residence
+      description: The project was designed to offer a private and confortable environment, with a number of apartments that ensure a friendly area and using premium quality building materials, all apartments boasting a 19 sqm private balcony. The area is very quiet, out of the city's heavy traffic way, but still close to the city center. Closeby you can find public transportation, stores, banks, restaurants and a lot of other points of interest.
+      features:
+        [
+          "Secure investment",
+          "Close to city center",
+          "Quiet area",
+          "Spacious apartments",
+          "19 sqm balcony",
+          "Private parking",
+          "Premium finishes",
+          "Practical design",
+        ]
+      renders-heading: Design ideas
+      renders-subheading: Find some inspiration from our architect
+      carousel:
+        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt3.jpg"
+        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt7.jpg"
+        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt6.jpg"
+      location-heading: Location
+      location-subheading: Constituției 3 St., Arad
+      floorplans-heading: Apartments
+      floorplans-subheading: Choose the best apartment for you.
+      tabs:
+        - id: 1
+          name: Floor plans
+          source: "/assets/img/bb-imo-residence/floor-plans/Bloc_Constitutiei3_CONCEPT_03B_PlanNivelCurent_small.png"
+    ro:
+      caption: Apartamente de vânzare
+      link: /ro/properties/bb-imo-residence.html
+      heading: De ce BB-Imo Residence
+      description: Proiectul este conceput să ofere un ambient privat și confortabil, cu un număr de apartamente care să asigure o zonă prietenoasă și folosind doar materiale premium, toate apartamentele beneficiind de balcoane private de 19 mp. Zona este foarte liniștită, ferită de marele trafic al orașului, dar aproape de centru. În apropiere există mijloace de transport în comun, magazine, bănci, restaurante și multe alte puncte de interes.
+
+      features:
+        [
+          "Investiție sigură",
+          "Aproape de centru",
+          "Zonă liniștită",
+          "Apartamente spațioase",
+          "Balcon de 19 mp",
+          "Parcare privată",
+          "Finisaje premium",
+          "Design practic",
+        ]
+      renders-heading: Idei de design
+      renders-subheading: Puțină inspirație de la arhitectul nostru.
+      carousel:
+        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt3.jpg"
+        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt7.jpg"
+        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt6.jpg"
+      location-heading: Locatie
+      location-subheading: Str. Constituției nr.3, Arad
+      floorplans-heading: Apartamente
+      floorplans-subheading: Alege apartamentul perfect pentru tine.
+      tabs:
+        - id: 1
+          name: Plan de nivel
+          source: "/assets/img/bb-imo-residence/floor-plans/Bloc_Constitutiei3_CONCEPT_03B_PlanNivelCurent_small.png"

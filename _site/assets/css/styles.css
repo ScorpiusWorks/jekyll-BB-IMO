@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Arimo|Play&display=swap");
 /* [ -- Master Stylesheet -- ] */
 /* ##################################################
 
@@ -54,7 +55,7 @@
   padding: 0; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Play", "Open Sans", sans-serif; }
 
 h1,
 h2,
@@ -353,7 +354,7 @@ img {
   position: relative;
   z-index: 1;
   text-align: center;
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
   .section-heading img {
     margin-bottom: 10px; }
   .section-heading h2 {
@@ -416,7 +417,7 @@ img {
 
 .header-area {
   position: absolute;
-  z-index: 10000;
+  z-index: 9995;
   width: 100%;
   height: auto;
   -webkit-transition-duration: 500ms;
@@ -435,7 +436,7 @@ img {
     line-height: 1; }
     @media only screen and (max-width: 767px) {
       .top-header-area .email-address {
-        padding: 15px 30px; } }
+        padding: 0 15px 0 30px; } }
     .top-header-area .email-address a {
       color: #808080;
       font-size: 12px;
@@ -458,41 +459,48 @@ img {
         padding: 16px 0;
         max-width: 15px; }
     .top-header-area .phone-number .number a {
-      padding: 0 60px;
+      padding: 0 66px 0 66px;
       color: #ffffff;
       line-height: 45px;
       font-size: 12px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .top-header-area .phone-number .number a {
+          padding: 0 30px 0 30px; } }
+      @media only screen and (max-width: 767px) {
+        .top-header-area .phone-number .number a {
+          padding: 0 30px 0 30px; } }
 
 .main-header-area {
   width: 100%;
-  height: 90px;
+  height: 100px;
   position: relative;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.75);
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .main-header-area {
-      height: 70px; } }
+      height: 90px; } }
   @media only screen and (max-width: 767px) {
     .main-header-area {
-      height: 70px; } }
+      height: 80px; } }
   .main-header-area .classy-nav-container {
     background-color: transparent; }
   .main-header-area .classy-navbar {
-    height: 90px;
+    height: 100px;
     padding: .5em 60px; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .main-header-area .classy-navbar {
-        height: 70px; } }
+        height: 90px; } }
     @media only screen and (max-width: 767px) {
       .main-header-area .classy-navbar {
-        height: 70px;
+        height: 80px;
         padding: 0.5em 30px; } }
   .main-header-area .classynav ul li a {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
+    -webkit-transition: all ease .5s;
     transition: all ease .5s; }
     .main-header-area .classynav ul li a:hover {
       color: #947054; }
@@ -502,8 +510,7 @@ img {
       .main-header-area .nav-brand {
         margin-right: 0; } }
     .main-header-area .nav-brand img {
-      height: auto;
-      max-height: 100%; }
+      height: 100%; }
   .main-header-area .classynav ul {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms; }
@@ -587,33 +594,24 @@ img {
 
 .is-sticky .main-header-area {
   width: 100%;
-  z-index: 10000 !important;
-  height: 90px;
+  z-index: 9994 !important;
+  height: 100px;
   -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   background-color: #000000; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .is-sticky .main-header-area {
-      height: 70px; } }
+      height: 90px; } }
   @media only screen and (max-width: 767px) {
     .is-sticky .main-header-area {
-      height: 70px; } }
+      height: 80px; } }
 
 /* :: 9.0 Welcome Area CSS */
 .single-hero-slide {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 800px; }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .single-hero-slide {
-      height: 700px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single-hero-slide {
-      height: 650px; } }
-  @media only screen and (max-width: 767px) {
-    .single-hero-slide {
-      height: 550px; } }
+  height: 100vh; }
 
 .hero-slides-content {
   text-align: center; }
@@ -623,7 +621,8 @@ img {
     margin-bottom: 0;
     padding: 10px 15px;
     text-transform: uppercase;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
     line-height: 1;
     display: inline-block; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1082,7 +1081,7 @@ img {
         color: #947054; }
 
 .footer-widget-area .widget-title {
-  margin-bottom: 90px; }
+  margin-bottom: 40px; }
   .footer-widget-area .widget-title h6 {
     font-size: 16px;
     color: #ffffff;
@@ -1176,6 +1175,41 @@ img {
     opacity: 1;
     visibility: visible; }
 
+.property-slider {
+  position: relative;
+  z-index: 1; }
+  .property-slider .owl-prev,
+  .property-slider .owl-next {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    left: -19px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: -19px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    background-color: #947054;
+    font-size: 13px;
+    -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.15); }
+    .property-slider .owl-prev:hover,
+    .property-slider .owl-next:hover {
+      background-color: #000000; }
+  .property-slider .owl-next {
+    left: auto;
+    right: -19px; }
+  .property-slider:hover .owl-prev, .property-slider:hover .owl-next {
+    opacity: 1;
+    visibility: visible; }
+  .property-slider img {
+    max-height: 500px;
+    width: auto; }
+
 /* :: 16.0 Breadcumb Area CSS */
 .breadcumb-area {
   width: 100%;
@@ -1187,7 +1221,8 @@ img {
   .breadcumb-area .breadcumb-title {
     font-size: 60px;
     margin-bottom: 0;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
     padding: 5px 20px 7px;
     line-height: 1;
     color: #ffffff;
@@ -1252,8 +1287,10 @@ img {
 .single-team-member {
   position: relative;
   z-index: 1;
+  -webkit-transition: all ease-in-out .3s;
   transition: all ease-in-out .3s; }
   .single-team-member:hover {
+    -webkit-transform: scale(1.05);
     transform: scale(1.05); }
   .single-team-member .team-member-thumb {
     margin-bottom: 40px; }
@@ -1393,7 +1430,8 @@ img {
           -webkit-box-flex: 0;
           -ms-flex: 0 0 100%;
           flex: 0 0 100%;
-          min-width: 100%; } }
+          min-width: 100%;
+          padding-bottom: 10px; } }
       .listings-content .listings-core-features li i {
         width: 27px;
         height: 27px;
@@ -1464,6 +1502,8 @@ img {
   .listings-maps #googleMap {
     width: 100%;
     height: 540px; }
+  .listings-maps img {
+    width: 100%; }
 
 /* :: 20.0 Blog Area CSS */
 .single-blog-area {
@@ -1802,6 +1842,10 @@ img {
         color: #ffffff; }
   .tabs-content .tab-content h6 {
     font-size: 18px; }
+  .tabs-content .tab-content .map,
+  .tabs-content .tab-content img {
+    max-width: 100%;
+    max-height: 100%; }
 
 /* Loaders CSS */
 .single-pie-bar {
@@ -1826,26 +1870,30 @@ Google Map
 **********************************/
 #google-container {
   position: relative;
-  min-width: 100%;
-  min-height: 400px;
+  width: 100%;
+  height: 500px;
   background-color: #e7eaf0; }
 
 #cd-google-map {
   position: relative;
   padding: 0px; }
 
-#cd-zoom-in, #cd-zoom-out, #cd-navigate {
+#cd-zoom-in,
+#cd-zoom-out,
+#cd-navigate {
   height: 32px;
   width: 32px;
   cursor: pointer;
   margin-left: 10px;
-  background-color: rgba(34, 58, 94, 0.9);
+  background-color: rgba(148, 112, 84, 0.9);
   background-repeat: no-repeat;
   background-size: 32px 96px;
   background-image: url("/assets/img/cd-icon-controller.svg"); }
 
-.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover, .no-touch #cd-navigate:hover {
-  background-color: #223a5e; }
+.no-touch #cd-zoom-in:hover,
+.no-touch #cd-zoom-out:hover,
+.no-touch #cd-navigate:hover {
+  background-color: #000000; }
 
 #cd-zoom-in {
   background-position: 33% 0;
@@ -1858,3 +1906,8 @@ Google Map
 
 #cd-navigate {
   background-position: 33% -64px; }
+
+#owl-property img {
+  display: block;
+  width: 100%;
+  height: auto; }

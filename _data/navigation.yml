@@ -1,27 +1,35 @@
 en:
-    home:
-        name: Home
-        link: /
-    about:
-        name: About
-        link: /about.html
-    properties:
-        name: Properties
-        link: /properties.html
-    contact:
-        name: Contact
-        link: /contact.html
+  home:
+    name: Home
+    link: /en/
+  about:
+    name: About
+    link: /en/about.html
+  properties:
+    name: Properties
+    link: /en/properties.html
+  contact:
+    name: Contact
+    link: /en/contact.html
 
 ro:
-    home:
-        name: Acasă
-        link: /ro/
-    about:
-        name: Despre noi
-        link: /ro/about.html
-    properties:
-        name: Proprietăți
-        link: /ro/properties.html
-    contact:
-        name: Contact
-        link: /ro/contact.html
+  home:
+    name: Acasă
+    link: /
+  about:
+    name: Despre noi
+    link: /about.html
+  properties:
+    name: Proprietăți
+    link: /properties.html
+  contact:
+    name: Contact
+    link: /contact.html
+
+props:
+  ro:
+    - name: BB-Imo Residence
+      link: /properties/bb-imo-residence.html
+  en:
+    - name: BB-Imo Residence
+      link: /en/properties/bb-imo-residence.html

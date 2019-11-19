@@ -21,7 +21,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/ico/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/ico/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/ico/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/ico/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/ico/favicon-16x16.png">
@@ -64,11 +64,16 @@
     <script src="/assets/js/jquery-ui.min.js"></script>
     <!-- Active js -->
     <script src="/assets/js/active.js"></script>
-    <!-- Google Maps js -->
-    <script src="/assets/js/map-active.js"></script>
-    <!-- Google Maps API key -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-MirZ17KO34PNO1DG0iBQqfCcAwQuXPY"></script>
 
+    <!-- Cookie bar -->
+    <script type="text/javascript"
+        src="/assets/cookie-bar/cookiebar-latest.min.js?theme=white&always=1&noGeoIp=1&refreshPage=1&remember=Autodetect">
+    </script>
+
+    {% if page.url contains "contact" or page.url contains "/properties/" %}
+    <!-- ##### Google Map ##### -->
+    {% include maps.html %}
+    {% endif %}
 </body>
 
 </html>
