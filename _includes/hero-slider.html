@@ -2,16 +2,16 @@
     <div class="hero-slides owl-carousel">
 
         <!-- Single Hero Slides -->
-        {% for slide in site.data.hero-slides.[page.lang] %}
+        {% for slide in site.data.hero-slides.[layout.slider].[page.lang] %}
         <div class="single-hero-slide bg-img" style="background-image: url({{ slide.image }});">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
                         <div class="hero-slides-content">
-                            {% if page.ref == "home" %}
-                            <h2 data-animation="fadeInUp" data-delay="100ms">{{ slide.text }}</h2>
-                            {% else %}
+                            {% if page.ref == "contact" or page.ref == "about" or page.ref == "properties" %}
                             <h2 data-animation="fadeInUp" data-delay="100ms">{{ page.title }}</h2>
+                            {% else %}
+                            <h2 data-animation="fadeInUp" data-delay="100ms">{{ slide.text }}</h2>
                             {% endif %}
                         </div>
                     </div>

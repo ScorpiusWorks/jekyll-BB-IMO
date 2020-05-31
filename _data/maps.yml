@@ -7,3 +7,8 @@ residence:
   latitude: 46.153841
   longitude: 21.320612
   navlink: https://www.google.com/maps/dir/?api=1&destination=Strada+Constituției+3,+Arad
+
+offices:
+  latitude: 46.175877
+  longitude: 21.317956
+  navlink: https://www.google.com/maps/dir/?api=1&destination=Banca+Transilvania,+Bulevardul+Revoluției+nr.76,+Arad+400027

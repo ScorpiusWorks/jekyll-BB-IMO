@@ -1,27 +1,28 @@
 {% for project in site.data.projects.list %}
-    {% if page.ref != "about" %}
-    <div class="col-12 col-md-6 wow fadeInUp">
-    {% endif %}
-        <a href="{{ project[page.lang].link }}">
-            <div class="single-featured-property wow fadeInUp" data-wow-delay="100ms">
+{% if page.layout != "about-page" %}
+<div class="col-12 col-md-6 wow fadeInUp">
+    <a href="{{ project[page.lang].link }}">
+        {% endif %}
+        <div class="single-featured-property wow fadeInUp" data-wow-delay="100ms">
 
-                <!-- Property Thumbnail -->
-                <div class="property-thumb">
-                    <img src="{{ project.thumbnail }}" alt="">
-                    <div class="tag">
-                        <span>{{ project[page.lang].caption }}</span>
-                    </div>
-                </div>
-                <!-- Property Content -->
-                <div class="property-content">
-                    <h5>{{ project.name }}</h5>
-                    <p class="location"><img src="/assets/img/icons/location.png" alt="">{{ project[page.lang].location-subheading }}</p>
-                    <p>{{ project[page.lang].description }}</p>
-                    <a href="{{ project[page.lang].link }}" class="btn btn" style="font-size: 1.5rem;">&rarr;</a>
+            <!-- Property Thumbnail -->
+            <div class="property-thumb">
+                <img src="{{ project.thumbnail }}" alt="">
+                <div class="tag">
+                    <span>{{ project[page.lang].caption }}</span>
                 </div>
             </div>
-        </a>
-    {% if page.ref != "about" %}
-    </div>
-    {% endif %}
+            <!-- Property Content -->
+            <div class="property-content">
+                <h5>{{ project.name }}</h5>
+                <p class="location"><img src="/assets/img/icons/location.png"
+                        alt="">{{ project[page.lang].location-subheading }}</p>
+                <p>{{ project[page.lang].description }}</p>
+                <a href="{{ project[page.lang].link }}" class="btn btn" style="font-size: 1.5rem;">&rarr;</a>
+            </div>
+        </div>
+        {% if page.layout != "about-page" %}
+    </a>
+</div>
+{% endif %}
 {% endfor %}

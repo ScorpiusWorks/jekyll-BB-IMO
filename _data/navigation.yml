@@ -30,6 +30,10 @@ props:
   ro:
     - name: BB-Imo Residence
       link: /properties/bb-imo-residence.html
+    - name: Spații birouri Revoluției
+      link: /properties/revolutiei-office.html
   en:
     - name: BB-Imo Residence
       link: /en/properties/bb-imo-residence.html
+    - name: Revoluției Office Spaces
+      link: /en/properties/revolutiei-office.html

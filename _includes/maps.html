@@ -2,13 +2,14 @@
     // Initialize and add the map
     function initMap() {
         //set your google maps parameters
-        var latitude = {{ site.data.maps[page.map].latitude }},
-            longitude = {{ site.data.maps[page.map].longitude }},
+        var latitude = "{{site.data.maps.[layout.map].latitude}}",
+            longitude = "{{site.data.maps.[layout.map].longitude}}",
             map_zoom = 17;
 
         //google map custom marker icon - .png fallback for IE11
         var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-        var marker_url = (is_internetExplorer11) ? '/assets/img/cd-icon-location.png' : '/assets/img/cd-icon-location.png';
+        var marker_url = (is_internetExplorer11) ? '/assets/img/cd-icon-location.png' :
+            '/assets/img/cd-icon-location.png';
 
         //define the basic color of your map, plus a value for saturation and brightness
         var main_color = '#223a5e',
@@ -226,14 +227,14 @@
             controlDiv.appendChild(controlUInavigate);
 
             // Setup the click event listeners and zoom-in or out according to the clicked element
-            google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
+            google.maps.event.addDomListener(controlUIzoomIn, 'click', function () {
                 map.setZoom(map.getZoom() + 1)
             });
-            google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
+            google.maps.event.addDomListener(controlUIzoomOut, 'click', function () {
                 map.setZoom(map.getZoom() - 1)
             });
-            google.maps.event.addDomListener(controlUInavigate, 'click', function() {
-                window.open("{{ site.data.maps[page.map].navlink }}");
+            google.maps.event.addDomListener(controlUInavigate, 'click', function () {
+                window.open("{{ site.data.maps.[layout.map].navlink }}");
             });
         }
 
@@ -246,7 +247,9 @@
 </script>
 
 <script src="/assets/js/contact_me.js" type="text/javascript"></script>
-<script src="/assets/js/jqBootstrapValidation.js" type="text/javascript"></script> 
+<script src="/assets/js/jqBootstrapValidation.js" type="text/javascript"></script>
 
 <!-- Google Maps API key -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSdYErOXyJHRqfbpcabT6bF8AkXeIdM78&callback=initMap" type="text/javascript"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSdYErOXyJHRqfbpcabT6bF8AkXeIdM78&callback=initMap"
+    type="text/javascript"></script>

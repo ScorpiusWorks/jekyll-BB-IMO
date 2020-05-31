@@ -1,11 +1,17 @@
 list:
   - name: BB Imo Residence
     thumbnail: /assets/img/bb-imo-residence/bb-imo-residence-thumbnail.jpg
+    carousel:
+      - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt3.jpg"
+      - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt7.jpg"
+      - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt6.jpg"
     en:
       caption: Apartments for sale
-      link: /properties/bb-imo-residence.html
+      link: /en/properties/bb-imo-residence.html
       heading: Why BB-Imo Residence
-      description: The project was designed to offer a private and confortable environment, with a number of apartments that ensure a friendly area and using premium quality building materials, all apartments boasting a 19 sqm private balcony. The area is very quiet, out of the city's heavy traffic way, but still close to the city center. Closeby you can find public transportation, stores, banks, restaurants and a lot of other points of interest.
+      description:
+        - The project was designed to offer a private and confortable environment, with a number of apartments that ensure a friendly area and using premium quality building materials, all apartments boasting a 19 sqm private balcony.
+        - The area is very quiet, out of the city's heavy traffic way, but still close to the city center. Closeby you can find public transportation, stores, banks, restaurants and a lot of other points of interest.
       features:
         [
           "Secure investment",
@@ -19,12 +25,8 @@ list:
         ]
       renders-heading: Design ideas
       renders-subheading: Find some inspiration from our architect
-      carousel:
-        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt3.jpg"
-        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt7.jpg"
-        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt6.jpg"
       location-heading: Location
-      location-subheading: Constituției 3 St., Arad
+      location-subheading: Constituției 3, Arad
       floorplans-heading: Apartments
       floorplans-subheading: Choose the best apartment for you.
       tabs:
@@ -33,10 +35,11 @@ list:
           source: "/assets/img/bb-imo-residence/floor-plans/Bloc_Constitutiei3_CONCEPT_03B_PlanNivelCurent_small.png"
     ro:
       caption: Apartamente de vânzare
-      link: /ro/properties/bb-imo-residence.html
+      link: /properties/bb-imo-residence.html
       heading: De ce BB-Imo Residence
-      description: Proiectul este conceput să ofere un ambient privat și confortabil, cu un număr de apartamente care să asigure o zonă prietenoasă și folosind doar materiale premium, toate apartamentele beneficiind de balcoane private de 19 mp. Zona este foarte liniștită, ferită de marele trafic al orașului, dar aproape de centru. În apropiere există mijloace de transport în comun, magazine, bănci, restaurante și multe alte puncte de interes.
-
+      description:
+        - Proiectul este conceput să ofere un ambient privat și confortabil, cu un număr de apartamente care să asigure o zonă prietenoasă și folosind doar materiale premium, toate apartamentele beneficiind de balcoane private de 19 mp.
+        - Zona este foarte liniștită, ferită de marele trafic al orașului, dar aproape de centru. În apropiere există mijloace de transport în comun, magazine, bănci, restaurante și multe alte puncte de interes.
       features:
         [
           "Investiție sigură",
@@ -50,11 +53,7 @@ list:
         ]
       renders-heading: Idei de design
       renders-subheading: Puțină inspirație de la arhitectul nostru.
-      carousel:
-        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt3.jpg"
-        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt7.jpg"
-        - source: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-apt6.jpg"
-      location-heading: Locatie
+      location-heading: Locație
       location-subheading: Str. Constituției nr.3, Arad
       floorplans-heading: Apartamente
       floorplans-subheading: Alege apartamentul perfect pentru tine.
@@ -62,3 +61,103 @@ list:
         - id: 1
           name: Plan de nivel
           source: "/assets/img/bb-imo-residence/floor-plans/Bloc_Constitutiei3_CONCEPT_03B_PlanNivelCurent_small.png"
+
+  - name: Revoluției Office Spaces
+    thumbnail: /assets/img/revolutiei-office/bb-imo-revolutiei-office-01-min.jpg
+    carousel:
+      - source: "/assets/img/revolutiei-office/bb-imo-revolutiei-office-01-min.jpg"
+      - source: "/assets/img/revolutiei-office/BEV-Revolutiei-Offices-min.jpg"
+      - source: "/assets/img/revolutiei-office/bb-imo-revolutiei-office-02-min.jpg"
+      - source: "/assets/img/revolutiei-office/bb-imo-revolutiei-office-03-min.jpg"
+      - source: "/assets/img/revolutiei-office/bb-imo-revolutiei-office-04-min.jpg"
+      - source: "/assets/img/revolutiei-office/bb-imo-revolutiei-office-05-min.jpg"
+      - source: "/assets/img/revolutiei-office/bb-imo-revolutiei-office-06-min.jpg"
+      - source: "/assets/img/revolutiei-office/bb-imo-revolutiei-office-07-min.jpg"
+      - source: "/assets/img/revolutiei-office/bb-imo-revolutiei-office-08-min.jpg"
+      - source: "/assets/img/revolutiei-office/bb-imo-revolutiei-office-09-min.jpg"
+      - source: "/assets/img/revolutiei-office/bb-imo-revolutiei-office-10-min.jpg"
+      - source: "/assets/img/revolutiei-office/bb-imo-revolutiei-office-11-min.jpg"
+    en:
+      caption: Office spaces for rent
+      link: /en/properties/revolutiei-office.html
+      heading: Why our office spaces
+      description:
+        - Commercial space of 205 sqm, located on the Bulevardul Revoluției, across the road from the City Hall of Arad, at the basement. It has two bathrooms, conference room, direct (private) entrance into the building right from the boulevard and the possibility of placing a billboard directly on the boulevard.
+        - The space can be rented for a smaller area, or it can be compartmentalized on request.
+      features:
+        [
+          "City center",
+          "Billboard",
+          "Modern",
+          "Flexible options",
+          "Cool in summer",
+          "Foot traffic",
+        ]
+      carousel-heading: Here are some photos
+      carousel-subheading: Let the imagination make it your own office space
+      location-heading: Location
+      location-subheading: Revoluției 76, Arad
+      options-heading: Rent options
+      options-subheading: Choose the most suitable for you!
+      tabs:
+        - id: 1
+          name: 77 sqm
+          price: "Cost: 290 €"
+          description:
+            - 1 x rooms
+            - 1 x bathroom
+        - id: 2
+          name: 85 sqm
+          price: "Cost: 390 €"
+          description:
+            - 2 x rooms
+            - 1 x bathroom
+        - id: 3
+          name: 205 sqm
+          price: "Cost: 730 €"
+          description:
+            - 3 x rooms
+            - 2 x bathrooms
+            - 1 x conference room
+    ro:
+      caption: Spații de birouri de închiriat
+      link: /properties/revolutiei-office.html
+      heading: De ce spațiul nostru de birouri
+      description:
+        - Spațiu comercial de 205 mp, aflat pe Bulevardul Revoluției, peste drum de Primăria Municipiului Arad, la demisol. Dispune de intrare direct în imobil (privată), două băi, sală de conferință. Posibilitate de amplasare panou publicitar direct pe bulevard.
+        - Spațiul poate fi închiriat pentru o suprafață mai mică, sau se poate compartimenta, în alt mod, la cerere.
+      features:
+        [
+          "Ultracentral",
+          "Vad comercial",
+          "Modern",
+          "Închiriere flexibilă",
+          "Panou publicitar",
+          "Răcoros vara",
+        ]
+      carousel-heading: Mai multe poze
+      carousel-subheading: Lasă-ți imaginația să-l transforme în spațiul tău
+      location-heading: Locație
+      location-subheading: Str. Revoluției nr.76, Arad
+      options-heading: Opțiuni de închiriere
+      options-subheading: Alege cea mai bună variantă pentru tine!
+      tabs:
+        - id: 1
+          name: 77 m2
+          price: "Preț: 290 €"
+          description:
+            - 1 x încăperi
+            - 1 x baie
+        - id: 2
+          name: 85 m2
+          price: "Preț: 390 €"
+          description:
+            - 2 x încăperi
+            - 1 x baie
+        - id: 3
+          name: 205 m2
+          price: "Preț: 730 €"
+          description:
+            - 3 x incăperi
+            - 2 x băi
+            - 1 x sală de conferințe

@@ -1,5 +1,9 @@
 ---
 layout: default
+slider: bb-imo-residence
+realtor: dzamfir@bb-imo.ro
+map: residence
+breadcrumb: bb-imo-residence
 ---
 
 <!-- ##### Hero Area Start ##### -->
@@ -15,8 +19,10 @@ layout: default
                 <div class="listings-content">
                     <h5 class="wow fadeInUp" data-wow-delay="200ms">{{ site.data.projects.list[0][page.lang].heading }}
                     </h5>
+                    {% for item in site.data.projects.list[0][page.lang].description %}
                     <p class="wow fadeInUp" data-wow-delay="300ms">
-                        {{ site.data.projects.list[0][page.lang].description }}</p>
+                        {{ item }}</p>
+                    {% endfor %}
 
                     <!-- Core Features -->
                     <ul class="listings-core-features d-flex wow fadeInUp" data-wow-delay="400ms">
@@ -36,7 +42,7 @@ layout: default
                 <div class="contact-realtor-wrapper wow fadeInUp" data-wow-delay="500ms">
                     <div class="realtor-info">
                         {% for person in site.data.team.people %}
-                        {% if person.mail == page.realtor %}
+                        {% if person.mail == layout.realtor %}
 
                         <img src="{{ person.image }}" alt="">
                         <div class="realtor---info">
@@ -137,7 +143,7 @@ layout: default
         <div class="row">
             <div class="col-12 mb-100 px-5">
                 <div class="property-slider owl-carousel wow fadeInUp" data-wow-delay="500ms">
-                    {% for image in site.data.projects.list[0][page.lang].carousel %}
+                    {% for image in site.data.projects.list[0].carousel %}
                     <div class="item">
                         <img class="mx-auto" src="{{ image.source }}" alt="">
                     </div>

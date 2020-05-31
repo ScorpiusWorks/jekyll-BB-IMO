@@ -1,15 +1,50 @@
-en:
-  - image: /assets/img/bg-img/bb-imo-residence-3b.jpg
-    text: Your home
-  - image: /assets/img/bg-img/bb-imo-residence-4.jpg
-    text: Your dream house
-  - image: /assets/img/bg-img/bb-imo-residence-5.jpg
-    text: Your perfect home
+home:
+  en:
+    - image: /assets/img/bg-img/bb-imo-residence-3b.jpg
+      text: Your home
+    - image: /assets/img/revolutiei-office/bb-imo-revolutiei-office-01-min.jpg
+      text: Your offices
+    - image: /assets/img/bg-img/bb-imo-residence-5.jpg
+      text: Your dream place
 
-ro:
-  - image: /assets/img/bg-img/bb-imo-residence-3b.jpg
-    text: Locuința ta de vis
-  - image: /assets/img/bg-img/bb-imo-residence-4.jpg
-    text: Noul tău cămin
-  - image: /assets/img/bg-img/bb-imo-residence-5.jpg
-    text: Locuința perfectă
+  ro:
+    - image: /assets/img/bg-img/bb-imo-residence-3b.jpg
+      text: Locuința ta de vis
+    - image: /assets/img/revolutiei-office/bb-imo-revolutiei-office-01-min.jpg
+      text: Spațiul tău de birouri
+    - image: /assets/img/bg-img/bb-imo-residence-5.jpg
+      text: Locația ta ideală
+
+bb-imo-residence:
+  en:
+    - image: /assets/img/bg-img/bb-imo-residence-3b.jpg
+      text: Your home
+    - image: /assets/img/bg-img/bb-imo-residence-4.jpg
+      text: Your dream house
+    - image: /assets/img/bg-img/bb-imo-residence-5.jpg
+      text: Your perfect home
+
+  ro:
+    - image: /assets/img/bg-img/bb-imo-residence-3b.jpg
+      text: Locuința ta de vis
+    - image: /assets/img/bg-img/bb-imo-residence-4.jpg
+      text: Noul tău cămin
+    - image: /assets/img/bg-img/bb-imo-residence-5.jpg
+      text: Locuința perfectă
+
+revolutiei-offices:
+  en:
+    - image: /assets/img/revolutiei-office/BEV-Revolutiei-Offices-wide-min.jpg
+      text: Your office
+    - image: /assets/img/revolutiei-office/bb-imo-revolutiei-office-01-min.jpg
+      text: City center
+    - image: /assets/img/revolutiei-office/bb-imo-revolutiei-office-04-min.jpg
+      text: Foot traffic
+
+  ro:
+    - image: /assets/img/revolutiei-office/BEV-Revolutiei-Offices-wide-min.jpg
+      text: Biroul tău
+    - image: /assets/img/revolutiei-office/bb-imo-revolutiei-office-01-min.jpg
+      text: Inima orașului
+    - image: /assets/img/revolutiei-office/bb-imo-revolutiei-office-04-min.jpg
+      text: Vad comercial

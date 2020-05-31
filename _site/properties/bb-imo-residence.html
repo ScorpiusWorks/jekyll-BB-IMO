@@ -105,6 +105,8 @@
                                     
                                     <li><a href='/properties/bb-imo-residence.html'>BB-Imo Residence</a></li>
                                     
+                                    <li><a href='/properties/revolutiei-office.html'>Spații birouri Revoluției</a></li>
+                                    
                                 </ul>
                                 
                             </li>
@@ -156,7 +158,7 @@
                     <div class="col-12">
                         <div class="hero-slides-content">
                             
-                            <h2 data-animation="fadeInUp" data-delay="100ms">BB Imo Residence</h2>
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Locuința ta de vis</h2>
                             
                         </div>
                     </div>
@@ -170,7 +172,7 @@
                     <div class="col-12">
                         <div class="hero-slides-content">
                             
-                            <h2 data-animation="fadeInUp" data-delay="100ms">BB Imo Residence</h2>
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Noul tău cămin</h2>
                             
                         </div>
                     </div>
@@ -184,7 +186,7 @@
                     <div class="col-12">
                         <div class="hero-slides-content">
                             
-                            <h2 data-animation="fadeInUp" data-delay="100ms">BB Imo Residence</h2>
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Locuința perfectă</h2>
                             
                         </div>
                     </div>
@@ -195,7 +197,6 @@
 
     </div>
 </section>
-
 <!-- ##### Hero Area End ##### -->
 
 <!-- ##### Listings Content Area Start ##### -->
@@ -207,8 +208,13 @@
                 <div class="listings-content">
                     <h5 class="wow fadeInUp" data-wow-delay="200ms">De ce BB-Imo Residence
                     </h5>
+                    
                     <p class="wow fadeInUp" data-wow-delay="300ms">
-                        Proiectul este conceput să ofere un ambient privat și confortabil, cu un număr de apartamente care să asigure o zonă prietenoasă și folosind doar materiale premium, toate apartamentele beneficiind de balcoane private de 19 mp. Zona este foarte liniștită, ferită de marele trafic al orașului, dar aproape de centru. În apropiere există mijloace de transport în comun, magazine, bănci, restaurante și multe alte puncte de interes.</p>
+                        Proiectul este conceput să ofere un ambient privat și confortabil, cu un număr de apartamente care să asigure o zonă prietenoasă și folosind doar materiale premium, toate apartamentele beneficiind de balcoane private de 19 mp.</p>
+                    
+                    <p class="wow fadeInUp" data-wow-delay="300ms">
+                        Zona este foarte liniștită, ferită de marele trafic al orașului, dar aproape de centru. În apropiere există mijloace de transport în comun, magazine, bănci, restaurante și multe alte puncte de interes.</p>
+                    
 
                     <!-- Core Features -->
                     <ul class="listings-core-features d-flex wow fadeInUp" data-wow-delay="400ms">
@@ -368,7 +374,7 @@
         <div class="row">
             <div class="col-12 mt-100">
                 <div class="section-heading wow fadeInUp" data-wow-delay="250ms">
-                    <h2>Locatie</h2>
+                    <h2>Locație</h2>
                     <p class="location"><img src="/assets/img/icons/location.png" alt="">
                         Str. Constituției nr.3, Arad</p>
                 </div>
@@ -515,13 +521,14 @@
     // Initialize and add the map
     function initMap() {
         //set your google maps parameters
-        var latitude = 46.153841,
-            longitude = 21.320612,
+        var latitude = "46.153841",
+            longitude = "21.320612",
             map_zoom = 17;
 
         //google map custom marker icon - .png fallback for IE11
         var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-        var marker_url = (is_internetExplorer11) ? '/assets/img/cd-icon-location.png' : '/assets/img/cd-icon-location.png';
+        var marker_url = (is_internetExplorer11) ? '/assets/img/cd-icon-location.png' :
+            '/assets/img/cd-icon-location.png';
 
         //define the basic color of your map, plus a value for saturation and brightness
         var main_color = '#223a5e',
@@ -739,13 +746,13 @@
             controlDiv.appendChild(controlUInavigate);
 
             // Setup the click event listeners and zoom-in or out according to the clicked element
-            google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
+            google.maps.event.addDomListener(controlUIzoomIn, 'click', function () {
                 map.setZoom(map.getZoom() + 1)
             });
-            google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
+            google.maps.event.addDomListener(controlUIzoomOut, 'click', function () {
                 map.setZoom(map.getZoom() - 1)
             });
-            google.maps.event.addDomListener(controlUInavigate, 'click', function() {
+            google.maps.event.addDomListener(controlUInavigate, 'click', function () {
                 window.open("https://www.google.com/maps/dir/?api=1&destination=Strada+Constituției+3,+Arad");
             });
         }
@@ -759,11 +766,12 @@
 </script>
 
 <script src="/assets/js/contact_me.js" type="text/javascript"></script>
-<script src="/assets/js/jqBootstrapValidation.js" type="text/javascript"></script> 
+<script src="/assets/js/jqBootstrapValidation.js" type="text/javascript"></script>
 
 <!-- Google Maps API key -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSdYErOXyJHRqfbpcabT6bF8AkXeIdM78&callback=initMap" type="text/javascript"></script>
-
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSdYErOXyJHRqfbpcabT6bF8AkXeIdM78&callback=initMap"
+    type="text/javascript"></script>
     
 </body>
 
