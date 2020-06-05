@@ -11,55 +11,72 @@ breadcrumb: revolutiei-office
 <!-- ##### Hero Area End ##### -->
 
 <!-- ##### Listings Content Area Start ##### -->
-<section class="listings-content-wrapper section-padding-100" style="margin-top: -100px; padding-bottom:0 !important">
-    <div class="container">
+<section
+  class="listings-content-wrapper section-padding-100"
+  style="margin-top: -100px; padding-bottom: 0 !important;"
+>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="listings-content">
+          <h5 class="wow fadeInUp" data-wow-delay="200ms">
+            {{ site.data.projects.list[1][page.lang].heading }}
+          </h5>
+          {% for item in site.data.projects.list[1][page.lang].description %}
+          <p class="wow fadeInUp" data-wow-delay="300ms">
+            {{ item }}
+          </p>
+          {% endfor %}
 
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <div class="listings-content">
-                    <h5 class="wow fadeInUp" data-wow-delay="200ms">{{ site.data.projects.list[1][page.lang].heading }}
-                    </h5>
-                    {% for item in site.data.projects.list[1][page.lang].description %}
-                    <p class="wow fadeInUp" data-wow-delay="300ms">
-                        {{ item }}</p>
-                    {% endfor %}
-
-                    <!-- Core Features -->
-                    <ul class="listings-core-features d-flex wow fadeInUp" data-wow-delay="400ms">
-                        {% for item in site.data.projects.list[1][page.lang].features %}
-                        <li class="text-center"><i class="fa fa-check" aria-hidden="true"></i> {{item}}</li>
-                        {% endfor %}
-                    </ul>
-                    <!-- Listings Btn Groups -->
-                    <!-- <div class="listings-btn-groups">
+          <!-- Core Features -->
+          <ul
+            class="listings-core-features d-flex wow fadeInUp text-center text-md-left"
+            data-wow-delay="400ms"
+          >
+            {% for item in site.data.projects.list[1][page.lang].features %}
+            <li class="">
+              <i class="fa fa-check" aria-hidden="true"></i> {{item}}
+            </li>
+            {% endfor %}
+          </ul>
+          <!-- Listings Btn Groups -->
+          <!-- <div class="listings-btn-groups">
                         <a href="#" class="btn btn">Floor plans</a>
                         <a href="#" class="btn btn active">Apartment types</a>
                     </div> -->
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="contact-realtor-wrapper wow fadeInUp" data-wow-delay="500ms">
-                    <div class="realtor-info">
-                        {% for person in site.data.team.people %}
-                        {% if person.mail == layout.realtor %}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div
+          class="contact-realtor-wrapper wow fadeInUp"
+          data-wow-delay="500ms"
+        >
+          <div class="realtor-info">
+            {% for person in site.data.team.people %} {% if person.mail ==
+            layout.realtor %}
 
-                        <img src="{{ person.image }}" alt="">
-                        <div class="realtor---info">
-                            <h2>{{person.name}}</h2>
-                            <p>{{person.position[page.lang]}}</p>
-                            <h6><img src="/assets/img/icons/phone-call.png" alt=""> {{person.phone}}</h6>
-                            <h6><img src="/assets/img/icons/envelope.png" alt=""> {{person.mail}}</h6>
+            <img src="{{ person.image }}" alt="" />
+            <div class="realtor---info">
+              <h2>{{person.name}}</h2>
+              <p>{{person.position[page.lang]}}</p>
+              <h6>
+                <img src="/assets/img/icons/phone-call.png" alt="" />
+                {{person.phone}}
+              </h6>
+              <h6>
+                <img src="/assets/img/icons/envelope.png" alt="" />
+                {{person.mail}}
+              </h6>
 
-                            <!-- Button -->
-                            <!-- {% if page.url contains "/ro/" %}
+              <!-- Button -->
+              <!-- {% if page.url contains "/ro/" %}
                                 <a href="/ro/contact.html" class="btn btn">Get in touch</a>
                             {% else %}
                                 <a href="/contact.html" class="btn btn">Trimite mesaj</a>
                             {% endif %} -->
-
-                        </div>
-                        <!-- <div class="realtor--contact-form">
+            </div>
+            <!-- <div class="realtor--contact-form">
                             <form action="#" method="post">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="realtor-name" placeholder="{{ site.data.contact-page[page.lang].placeholders.name }}">
@@ -77,78 +94,96 @@ breadcrumb: revolutiei-office
                             </form>
                         </div> -->
 
-                        {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
+            {% endif %} {% endfor %}
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 p-0">
-                <!-- Single Listings Slides -->
-                <div class="single-listings-sliders owl-carousel">
-                    <!-- Single Slide -->
-                    {% for image in site.data.projects.list[1].carousel %}
-                    <img src="{{ image.source }}" alt="">
-                    {% endfor %}
-                </div>
-            </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 p-0">
+        <!-- Single Listings Slides -->
+        <div class="single-listings-sliders owl-carousel">
+          <!-- Single Slide -->
+          {% for image in site.data.projects.list[1].carousel %}
+          <img src="{{ image.source }}" alt="" />
+          {% endfor %}
         </div>
+      </div>
     </div>
+  </div>
 
-
-
-    <!-- Apartments -->
-    <div class="container-fluid" style="background: #f5f5f5">
-        <div class="row">
-            <div class="col-12 mt-100">
-                <div class="section-heading">
-                    <h2 class="wow fadeInUp" data-wow-delay="200ms">
-                        {{ site.data.projects.list[1][page.lang].options-heading }}</h2>
-                    <p class="wow fadeInUp" data-wow-delay="400ms">
-                        {{ site.data.projects.list[1][page.lang].options-subheading }}</p>
-                </div>
-            </div>
-            <!-- ##### Tabs ##### -->
-            <div class="col-12 text-center">
-                <div class="tabs-content">
-                    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-                        {% for tab in site.data.projects.list[1][page.lang].tabs %}
-                        <li class="nav-item wow fadeInUp" data-wow-delay="{{ tab.id | times: 250 }}ms">
-                            <a class="nav-link {% if tab.id == 2 %} show active {% endif %}" id="tab--{{ tab.id }}"
-                                data-toggle="tab" href="#tab{{ tab.id }}" role="tab" aria-controls="tab{{ tab.id }}"
-                                aria-selected="{% if tab.id == 2 %}true{% else %}false{% endif %}">{{ tab.name }}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-
-                    <div class="tab-content mb-100 justify-content-center text-center wow fadeInUp"
-                        data-wow-delay="500ms" id="myTabContent">
-                        {% for tab in site.data.projects.list[1][page.lang].tabs %}
-                        <div class="tab-pane fade {% if tab.id == 2 %} show active {% endif %}" id="tab{{ tab.id }}"
-                            role="tabpanel" aria-labelledby="tab--{{ tab.id }}">
-                            <!-- Tab Text -->
-                            <div class="tab-text">
-                                <a href="{{ tab.source }}" target="_blank">
-                                    <h4>{{tab.price}}</h4>
-                                    {% for line in tab.description %}
-                                    <h6>{{line}}</h6>
-                                    {% endfor %}
-                                </a>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
+  <!-- Apartments -->
+  <div class="container-fluid" style="background: #f5f5f5;">
+    <div class="row">
+      <div class="col-12 mt-100">
+        <div class="section-heading">
+          <h2 class="wow fadeInUp" data-wow-delay="200ms">
+            {{ site.data.projects.list[1][page.lang].options-heading }}
+          </h2>
+          <p class="wow fadeInUp" data-wow-delay="400ms">
+            {{ site.data.projects.list[1][page.lang].options-subheading }}
+          </p>
         </div>
-    </div>
+      </div>
+      <!-- ##### Tabs ##### -->
+      <div class="col-12 text-center">
+        <div class="tabs-content">
+          <ul
+            class="nav nav-tabs d-flex justify-content-center"
+            id="myTab"
+            role="tablist"
+          >
+            {% for tab in site.data.projects.list[1][page.lang].tabs %}
+            <li
+              class="nav-item wow fadeInUp"
+              data-wow-delay="{{ tab.id | times: 250 }}ms"
+            >
+              <a
+                class="nav-link {% if tab.id == 2 %} show active {% endif %}"
+                id="tab--{{ tab.id }}"
+                data-toggle="tab"
+                href="#tab{{ tab.id }}"
+                role="tab"
+                aria-controls="tab{{ tab.id }}"
+                aria-selected="{% if tab.id == 2 %}true{% else %}false{% endif %}"
+                >{{ tab.name }}</a
+              >
+            </li>
+            {% endfor %}
+          </ul>
 
-    <!-- Project model -->
-    <!-- 
+          <div
+            class="tab-content mb-100 justify-content-center text-center wow fadeInUp"
+            data-wow-delay="500ms"
+            id="myTabContent"
+          >
+            {% for tab in site.data.projects.list[1][page.lang].tabs %}
+            <div
+              class="tab-pane fade {% if tab.id == 2 %} show active {% endif %}"
+              id="tab{{ tab.id }}"
+              role="tabpanel"
+              aria-labelledby="tab--{{ tab.id }}"
+            >
+              <!-- Tab Text -->
+              <div class="tab-text">
+                <h4>{{tab.price}}</h4>
+                {% for line in tab.description %}
+                <h6>{{line}}</h6>
+                {% endfor %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project model -->
+  <!-- 
     <div class="container-fluid" style="background: #f5f5f5">
         <div class="row">
             <div class="col-12 mt-100">
@@ -173,33 +208,32 @@ breadcrumb: revolutiei-office
     </div>
     -->
 
-    <!-- Listing Map -->
-    <div class="container">
-        <div class="row">
-            <div class="col-12 mt-100">
-                <div class="section-heading wow fadeInUp" data-wow-delay="250ms">
-                    <h2>{{ site.data.projects.list[1][page.lang].location-heading }}</h2>
-                    <p class="location"><img src="/assets/img/icons/location.png" alt="">
-                        {{ site.data.projects.list[1][page.lang].location-subheading }}</p>
-                </div>
-            </div>
+  <!-- Listing Map -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-100">
+        <div class="section-heading wow fadeInUp" data-wow-delay="250ms">
+          <h2>{{ site.data.projects.list[1][page.lang].location-heading }}</h2>
+          <p class="location">
+            <img src="/assets/img/icons/location.png" alt="" /> {{
+            site.data.projects.list[1][page.lang].location-subheading }}
+          </p>
         </div>
-
-
+      </div>
     </div>
-
+  </div>
 </section>
 <!-- ##### Listings Content Area End ##### -->
 
 <!-- START Google Maps -->
 <div class="row no-gutters wow fadeIn" data-wow-delay="500ms">
-    <div class="col-12">
-        <div id="cd-google-map">
-            <div id="google-container"></div>
-            <div id="cd-zoom-in"></div>
-            <div id="cd-zoom-out"></div>
-            <div id="cd-navigate"></div>
-        </div>
+  <div class="col-12">
+    <div id="cd-google-map">
+      <div id="google-container"></div>
+      <div id="cd-zoom-in"></div>
+      <div id="cd-zoom-out"></div>
+      <div id="cd-navigate"></div>
     </div>
+  </div>
 </div>
 <!-- END Google Maps -->

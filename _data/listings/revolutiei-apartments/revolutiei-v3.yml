@@ -1,0 +1,22 @@
+featured: true
+image: "/assets/img/revolutiei-apartments/revolutiei-apartments-living-bed.jpg"
+price: €250
+rooms: 1
+bathrooms: 1
+balcony: 0
+parking: 0
+space: 28.5
+en:
+  name: Downtown apartment
+  link: /en/properties/rent/central-apartment-v3.html
+  location: Revoluției 76, Arad
+  description: The apartment has one room with open-space kitchen and one bathroom. First rental after renovation (new electrical installation, own heating installation - new, change of tiles, all bathroom equipment new, new furniture, new doors, air conditioning / ventilation). The apartment is located opposite of the Arad City Hall, on Bulevardul Revoluției, and has all the utilities.
+  type: Rent
+  vat: VAT
+ro:
+  name: Apartament ultracentral
+  link: /properties/rent/central-apartment-v3.html
+  location: Revoluției nr.76, Arad
+  description: Apartament format din o cameră cu bucătărie open-space și o baie. Prima închiriere după renovare (instalație electrică nouă, instalație de încălzire proprie – nouă, schimbat gresie și faianță, toate dotările din baie noi, mobilier nou, uși noi, aer condiționat). Apartamentul se află vizavi de Primăria Municipiului Arad, pe Bulevardul Revoluției, și dispune de toate utilitățile.
+  type: Închiriază
+  vat: TVA

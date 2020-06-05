@@ -1,7 +1,7 @@
 hq:
-  latitude: 46.178711
-  longitude: 21.324461
-  navlink: https://www.google.com/maps/dir/?api=1&destination=Splaiul+David+Praporgescu+17,+Arad
+  latitude: 46.175877
+  longitude: 21.317956
+  navlink: https://www.google.com/maps/dir/?api=1&destination=Banca+Transilvania,+Bulevardul+Revoluției+nr.76,+Arad
 
 residence:
   latitude: 46.153841
@@ -11,4 +11,4 @@ residence:
 offices:
   latitude: 46.175877
   longitude: 21.317956
-  navlink: https://www.google.com/maps/dir/?api=1&destination=Banca+Transilvania,+Bulevardul+Revoluției+nr.76,+Arad+400027
+  navlink: https://www.google.com/maps/dir/?api=1&destination=Banca+Transilvania,+Bulevardul+Revoluției+nr.76,+Arad

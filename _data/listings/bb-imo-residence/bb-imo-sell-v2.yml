@@ -1,0 +1,21 @@
+image: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-new-apt4-min.jpg"
+price: €129.500
+rooms: 4
+bathrooms: 2
+parking: 1
+balcony: 1
+space: 175.72
+en:
+  name: Unfinished luxury apartment in Aradul Nou
+  link: /en/properties/bb-imo-residence/bb-imo-v1.html
+  location: Constituției 3, Arad
+  description: Investment-ready apartment that can be easily converted into two smaller ones. One of these or even both can be rented and provide a steady passive income without much of a hassle.
+  type: Buy
+  vat: VAT
+ro:
+  name: Apartament de lux nefinisat în Aradul Nou
+  link: /properties/bb-imo-residence/bb-imo-v1.html
+  location: Constituției nr.3, Arad
+  description: Apartament ideal pentru investiție care poate fi împărțit foarte ușor în două apartamente mai mici. Unul dintre acestea sau chiar amândouă se pot închiria, aducând un venit pasiv fără prea multă bătaie de cap.
+  type: Cumpără
+  vat: TVA
