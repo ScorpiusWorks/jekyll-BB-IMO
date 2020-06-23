@@ -1,7 +1,6 @@
 name: BB-Imo Real Estate
 title: BB-Imo Real Estate
-collections:
-    listings:
+url: "https://bb-imo.ro"
 plugins:
   - jekyll-sitemap
 livereload: true

@@ -4,28 +4,28 @@ breadcrumb: properties
 ---
 
 <!-- ##### Breadcumb Area Start ##### -->
-{% include breadcrumbs.html %}
+
 <!-- ##### Breadcumb Area End ##### -->
 
 <!-- ##### Advance Search Area Start ##### -->
 
 <!-- ##### Advance Search Area End ##### -->
 
-<!-- ##### Featured Properties Area Start ##### -->
+<!-- ##### Projects Area Start ##### -->
 <section class="listings-content-wrapper section-padding-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-heading wow fadeInUp">
-                    <h2>{{ site.data.featured-properties[page.lang].title }}</h2>
-                    <p>{{ site.data.featured-properties[page.lang].subtitle }}</p>
-                </div>
-            </div>
+  <div class="container mt-100">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-heading wow fadeInUp">
+          <h2>{{ site.data.featured-properties[page.lang].title }}</h2>
+          <p>{{ site.data.featured-properties[page.lang].subtitle }}</p>
         </div>
-        <!-- ##### Include the projects carousel ##### -->
-        <div class="row justify-content-center">
-            {% include all-projects.html %}
-        </div>
+      </div>
     </div>
+    <!-- ##### Include the projects carousel ##### -->
+    <div class="row justify-content-center">
+      {% include all-projects.html %}
+    </div>
+  </div>
 </section>
-<!-- ##### Featured Properties Area End ##### -->
+<!-- ##### Projects Area End ##### -->

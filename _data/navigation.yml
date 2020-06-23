@@ -6,8 +6,8 @@ en:
     name: About
     link: /en/about.html
   properties:
-    name: Properties
-    link: /en/properties.html
+    name: Projects
+    link: /en/properties/html
   contact:
     name: Contact
     link: /en/contact.html
@@ -20,7 +20,7 @@ ro:
     name: Despre noi
     link: /about.html
   properties:
-    name: Proprietăți
+    name: Proiecte
     link: /properties.html
   contact:
     name: Contact

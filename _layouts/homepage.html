@@ -11,13 +11,28 @@ slider: home
 <!-- ##### Advance Search Area Start ##### -->
 <!-- ##### Advance Search Area End ##### -->
 
+<!-- ##### Projects Area Start ##### -->
+<section class="listings-content-wrapper section-padding-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-heading wow fadeInUp">
+          <h2>{{ site.data.featured-properties[page.lang].title }}</h2>
+          <p>{{ site.data.featured-properties[page.lang].subtitle }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- ##### Include the projects carousel ##### -->
+    <div class="row justify-content-center">
+      {% include all-projects.html %}
+    </div>
+  </div>
+</section>
+<!-- ##### Projects Area End ##### -->
+
 <!-- ##### Company info Start ##### -->
 {% include company-info.html %}
 <!-- ##### Company info End ##### -->
-
-<!-- ##### Call To Action Area Start ##### -->
-{% include call-to-action.html %}
-<!-- ##### Call To Action Area End ##### -->
 
 <!-- ##### Testimonials Area Start ##### -->
 {% include why-us.html %}

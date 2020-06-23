@@ -1,24 +1,32 @@
-<section class="featured-properties-area section-padding-100-0">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-12">
-                <div class="section-heading wow fadeInUp" data-wow-delay="250ms">
-                    <h2>{{ site.data.about[page.lang].home-title }}</h2>
-                </div>
-                <div class="about-content text-justify">
-                    <p class="wow fadeInUp" data-wow-delay="450ms">{{ site.data.about[page.lang].description }}</p>
-                </div>
-                <div class="listings-content mt-0">
-                    <ul class="listings-core-features d-flex align-items-center">
-                        {% for item in site.data.about[page.lang].home-features %}
-                        <li class="text-center wow fadeInUp" data-wow-delay="{{ item.id | times: 350 }}ms">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            {{ item.text }}
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
+<section
+  class="call-to-action-area bg-fixed bg-overlay-black"
+  style="background-image: url(/assets/img/cta.jpg);"
+>
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-12">
+        <div class="cta-content text-center">
+          <h2 class="wow fadeInUp" data-wow-delay="300ms">
+            {{ site.data.about[page.lang].home-title }}
+          </h2>
+          <p class="wow fadeInUp" data-wow-delay="400ms">
+            {{ site.data.about[page.lang].description }}
+          </p>
         </div>
+        <div class="listings-content mt-0">
+          <ul class="listings-core-features d-flex align-items-center">
+            {% for item in site.data.about[page.lang].home-features %}
+            <li
+              class="text-center wow fadeInUp"
+              data-wow-delay="{{ item.id | times: 350 }}ms"
+            >
+              <i class="fa fa-check" aria-hidden="true"></i>
+              {{ item.text }}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
 </section>

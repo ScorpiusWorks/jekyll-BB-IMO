@@ -31,8 +31,8 @@ list:
       renders-subheading: Find some inspiration from our architect
       location-heading: Location
       location-subheading: Constituției 3, Arad
-      floorplans-heading: Apartments
-      floorplans-subheading: Choose the best apartment for you.
+      floorplans-heading: Apartments - useful m<sup>2</sup>
+      floorplans-subheading: Choose the best one for you.
       tabs:
         - type: buy
           title: Buy
@@ -75,8 +75,8 @@ list:
       renders-subheading: Puțină inspirație de la arhitectul nostru.
       location-heading: Locație
       location-subheading: Str. Constituției nr.3, Arad
-      floorplans-heading: Apartamente
-      floorplans-subheading: Alege apartamentul perfect pentru tine.
+      floorplans-heading: Apartamente - m<sup>2</sup> utili
+      floorplans-subheading: Alege-l pe cel perfect pentru tine.
       tabs:
         - type: buy
           title: Cumpără
@@ -229,7 +229,7 @@ list:
         ]
       location-heading: Location
       location-subheading: Revoluției 76, Arad
-      options-heading: Available options
+      options-heading: Available options - useful m<sup>2</sup>
       options-subheading: Choose the most suitable for you!
     ro:
       name: Apartamente Revoluției
@@ -250,5 +250,5 @@ list:
         ]
       location-heading: Locație
       location-subheading: Bd. Revoluției nr.76, Arad
-      options-heading: Opțiuni disponibile
+      options-heading: Opțiuni disponibile - m<sup>2</sup> utili
       options-subheading: Alege cea mai bună variantă pentru tine!

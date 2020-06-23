@@ -497,7 +497,10 @@ img {
         height: 80px;
         padding: 0.5em 30px; } }
   .main-header-area .classynav ul li .dropdown {
-    width: 220px !important; }
+    max-width: fit-content;
+    width: auto; }
+    .main-header-area .classynav ul li .dropdown li a {
+      white-space: nowrap; }
   .main-header-area .classynav ul li a {
     color: #ffffff;
     text-transform: uppercase;
@@ -613,13 +616,13 @@ img {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 100vh; }
+  height: 60vh; }
 
 .hero-slides-content {
   text-align: center; }
   .hero-slides-content h2 {
     color: #ffffff;
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 0;
     padding: 10px 15px;
     text-transform: uppercase;
@@ -1063,6 +1066,10 @@ img {
     @media only screen and (max-width: 767px) {
       .call-to-action-area .cta-content h6 {
         font-size: 16px; } }
+  .call-to-action-area .cta-content p {
+    color: #ffffff; }
+  .call-to-action-area .listings-content .listings-core-features li {
+    color: #ffffff; }
 
 /* :: 15.0 Footer Area CSS */
 .footer-area {

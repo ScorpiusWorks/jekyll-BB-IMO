@@ -2,20 +2,20 @@ image: "/assets/img/bb-imo-residence/apartments/bb-imo-residence-new-apt1-min.jp
 price: €367
 rooms: 2
 bathrooms: 1
-balcony: 1
+balcony: 1 x 19 m<sup>2</sup>
 parking: 1
 space: 87.44
 en:
   name: Fully equipped apartment in Aradul Nou
   link: /en/properties/bb-imo-residence/bb-imo-v1.html
   location: Constituției 3, Arad
-  description: Investment-ready apartment that can be easily converted into two smaller ones. One of these or even both can be rented and provide a steady passive income without much of a hassle.
+  description: Rent an ideal apartment in a very quiet area, out of the city's heavy traffic way, but still close to the city center. Closeby you can find public transportation, stores, banks, restaurants and a lot of other points of interest.
   type: Rent
   vat: VAT
 ro:
   name: Apartament complet utilat în Aradul Nou
   link: /properties/bb-imo-residence/bb-imo-v1.html
   location: Constituției nr.3, Arad
-  description: Apartament ideal pentru investiție care poate fi împărțit foarte ușor în două apartamente mai mici. Unul dintre acestea sau chiar amândouă se pot închiria, aducând un venit pasiv fără prea multă bătaie de cap.
+  description: Închiriază un apartament ideal într-o zonă foarte liniștită, ferită de marele trafic al orașului, dar totuși aproape de centru. În apropiere există mijloace de transport în comun, magazine, bănci, restaurante și multe alte puncte de interes.
   type: Închiriază
   vat: TVA

@@ -1,16 +1,16 @@
 home:
   - image: /assets/img/bb-imo-residence/slider/bb-imo-residence-3b.jpg
     text:
-      en: Your home
-      ro: Locuința ta de vis
-  - image: /assets/img/bb-imo-residence/slider/bb-imo-residence-5.jpg
-    text:
-      en: Your dream place
-      ro: Locația ta ideală
+      en: BB-Imo Residence, quiet neighborhood but close to the center
+      ro: BB-Imo Residence, zonă liniștită dar aproape de centru
   - image: /assets/img/revolutiei-office/bb-imo-revolutiei-office-entrance-min.jpg
     text:
-      en: Offices for rent on Bd. Revoluției, across the City Hall
+      en: Offices for rent, across the street from the City Hall
       ro: Birouri de închiriere pe Bd. Revoluției, vis-a-vis de primărie
+  - image: "/assets/img/revolutiei-apartments/revolutiei-apartments-yard.jpg"
+    text:
+      en: Apartments for rent, across the street from the City Hall
+      ro: Apartamente de închiriat, vis-a-vis de primărie
 
 bb-imo-residence:
   - image: /assets/img/bb-imo-residence/slider/bb-imo-residence-3b.jpg

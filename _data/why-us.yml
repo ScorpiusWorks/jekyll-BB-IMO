@@ -2,7 +2,7 @@ en:
   title: Why us
   subtitle: Because you know what's good for you.
   button: Find out more
-  link: /about.html
+  link: /en/about.html
   features:
     - id: 1
       title: Your future
@@ -27,7 +27,7 @@ ro:
   title: De ce noi
   subtitle: Pentru că îți poți da seama ce e mai bun pentru tine.
   button: Află mai multe
-  link: /ro/about.html
+  link: /about.html
   features:
     - id: 1
       title: Viitorul tău
