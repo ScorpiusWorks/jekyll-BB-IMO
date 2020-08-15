@@ -1,11 +1,11 @@
-(function($) {
+(function ($) {
   "use strict";
 
   var $window = $(window);
 
   // :: Preloader Active Code
-  $window.on("load", function() {
-    $("#preloader").fadeOut("slow", function() {
+  $window.on("load", function () {
+    $("#preloader").fadeOut("slow", function () {
       $(this).remove();
     });
   });
@@ -15,27 +15,27 @@
   var searchbtn = $(".searchbtn");
 
   searchbtnI.addClass("fa-search");
-  searchbtn.on("click", function() {
+  searchbtn.on("click", function () {
     $("body").toggleClass("search-close");
     searchbtnI.toggleClass("fa-times");
   });
 
   // :: More Filter Active Code
-  $("#moreFilter").on("click", function() {
+  $("#moreFilter").on("click", function () {
     $(".search-form-second-steps").slideToggle("1000");
   });
 
   // :: Nav Active Code
   if ($.fn.classyNav) {
     $("#southNav").classyNav({
-      theme: "dark"
+      theme: "dark",
     });
   }
 
   // :: Sticky Active Code
   if ($.fn.sticky) {
     $("#stickyHeader").sticky({
-      topSpacing: 0
+      topSpacing: 0,
     });
   }
 
@@ -60,17 +60,17 @@
       nav: true,
       navText: [
         '<i class="fa fa-angle-left"></i>',
-        '<i class="fa fa-angle-right"></i>'
+        '<i class="fa fa-angle-right"></i>',
       ],
       dots: true,
       autoplay: true,
       autoplayTimeout: 5000,
-      smartSpeed: 1000
+      smartSpeed: 1000,
     });
 
-    welcomeSlide.on("translate.owl.carousel", function() {
+    welcomeSlide.on("translate.owl.carousel", function () {
       var slideLayer = $("[data-animation]");
-      slideLayer.each(function() {
+      slideLayer.each(function () {
         var anim_name = $(this).data("animation");
         $(this)
           .removeClass("animated " + anim_name)
@@ -78,11 +78,11 @@
       });
     });
 
-    welcomeSlide.on("translated.owl.carousel", function() {
+    welcomeSlide.on("translated.owl.carousel", function () {
       var slideLayer = welcomeSlide
         .find(".owl-item.active")
         .find("[data-animation]");
-      slideLayer.each(function() {
+      slideLayer.each(function () {
         var anim_name = $(this).data("animation");
         $(this)
           .addClass("animated " + anim_name)
@@ -90,12 +90,12 @@
       });
     });
 
-    $("[data-delay]").each(function() {
+    $("[data-delay]").each(function () {
       var anim_del = $(this).data("delay");
       $(this).css("animation-delay", anim_del);
     });
 
-    $("[data-duration]").each(function() {
+    $("[data-duration]").each(function () {
       var anim_dur = $(this).data("duration");
       $(this).css("animation-duration", anim_dur);
     });
@@ -103,12 +103,10 @@
     // Dots Showing Number
     var dot = $(".hero-slides .owl-dot");
 
-    dot.each(function() {
+    dot.each(function () {
       var dotnumber = $(this).index() + 1;
       if (dotnumber <= 9) {
-        $(this)
-          .html("0")
-          .append(dotnumber);
+        $(this).html("0").append(dotnumber);
       } else {
         $(this).html(dotnumber);
       }
@@ -122,7 +120,7 @@
       nav: true,
       navText: [
         '<i class="ti-angle-left"></i>',
-        '<i class="ti-angle-right"></i>'
+        '<i class="ti-angle-right"></i>',
       ],
       dots: false,
       autoplay: true,
@@ -130,12 +128,12 @@
       smartSpeed: 1000,
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         576: {
-          items: 3
-        }
-      }
+          items: 3,
+        },
+      },
     });
 
     // :: Stopped carousel until we have more than one project...to be started back then
@@ -150,21 +148,21 @@
       nav: true,
       navText: [
         '<i class="ti-angle-left"></i>',
-        '<i class="ti-angle-right"></i>'
-      ]
+        '<i class="ti-angle-right"></i>',
+      ],
     });
 
     $(".single-listings-sliders").owlCarousel({
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         800: {
-          items: 2
+          items: 2,
         },
         2000: {
-          items: 3
-        }
+          items: 3,
+        },
       },
       margin: 0,
       loop: true,
@@ -174,8 +172,8 @@
       nav: true,
       navText: [
         '<i class="ti-angle-left"></i>',
-        '<i class="ti-angle-right"></i>'
-      ]
+        '<i class="ti-angle-right"></i>',
+      ],
     });
 
     $(".property-slider").owlCarousel({
@@ -189,19 +187,19 @@
       nav: true,
       navText: [
         '<i class="ti-angle-left"></i>',
-        '<i class="ti-angle-right"></i>'
+        '<i class="ti-angle-right"></i>',
       ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         576: {
-          items: 2
+          items: 2,
         },
         1000: {
-          items: 3
-        }
-      }
+          items: 3,
+        },
+      },
     });
   }
 
@@ -209,7 +207,7 @@
   if ($.fn.counterUp) {
     $(".counter").counterUp({
       delay: 10,
-      time: 2000
+      time: 2000,
     });
   }
 
@@ -218,12 +216,12 @@
     $.scrollUp({
       scrollSpeed: 1000,
       easingType: "easeInOutQuart",
-      scrollText: '<i class="fa fa-angle-up" aria-hidden="true"></i>'
+      scrollText: '<i class="fa fa-angle-up" aria-hidden="true"></i>',
     });
   }
 
   // :: PreventDefault a Click
-  $("a[href='#']").on("click", function($) {
+  $("a[href='#']").on("click", function ($) {
     $.preventDefault();
   });
 
@@ -233,7 +231,7 @@
   }
 
   // :: Slider Range
-  $(".slider-range-price").each(function() {
+  $(".slider-range-price").each(function () {
     var min = jQuery(this).data("min");
     var max = jQuery(this).data("max");
     var unit = jQuery(this).data("unit");
@@ -245,16 +243,14 @@
       min: min,
       max: max,
       values: [value_min, value_max],
-      slide: function(event, ui) {
+      slide: function (event, ui) {
         var result = ui.values[0] + unit + " - " + ui.values[1] + unit;
-        t.closest(".slider-range")
-          .find(".range")
-          .html(result);
-      }
+        t.closest(".slider-range").find(".range").html(result);
+      },
     });
   });
 
-  $.each($("*"), function() {
+  $.each($("*"), function () {
     if ($(this).width() > $("body").width()) {
       console.log("Wide Element: ", $(this), "Width: ", $(this).width());
     }

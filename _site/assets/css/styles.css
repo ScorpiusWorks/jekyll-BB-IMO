@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald|Arimo|Play&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Arimo|Open+Sans:300,400,600,700|Play&display=swap");
 /* [ -- Master Stylesheet -- ] */
 /* ##################################################
 
@@ -34,11 +34,11 @@
 :: 20.0 Blog Area CSS
 :: 21.0 Contact Area CSS
 :: 22.0 Shortcode Area CSS
+:: 23.0 Floating contact CSS
 
 ##### Index of Stylesheet ##### /*
 
-/* :: 1.0 Import Fonts */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+/* :: 1.0 Import Material Icons */
 /* :: 2.0 Import All CSS */
 @import url(/assets/css/bootstrap.min.css);
 @import url(/assets/css/animate.css);
@@ -172,29 +172,26 @@ img {
 .height-800 {
   height: 800px !important; }
 
-.section-padding-100 {
-  padding: 100px 0; }
-
 .section-padding-50 {
   padding: 50px 0; }
 
+.section-padding-25 {
+  padding: 25px 0; }
+
+.section-padding-25-0 {
+  padding: 25px 0 0 0; }
+
+.section-padding-50-25 {
+  padding: 50px 0 25px; }
+
+.section-padding-50-50 {
+  padding: 500px 0 50px; }
+
 .section-padding-50-0 {
-  padding: 50px 0 0 0; }
+  padding: 50px 0 0; }
 
-.section-padding-100-70 {
-  padding: 100px 0 70px; }
-
-.section-padding-100-50 {
-  padding: 100px 0 50px; }
-
-.section-padding-100-0 {
-  padding: 100px 0 0; }
-
-.section-padding-0-100 {
-  padding: 0 0 100px; }
-
-.section-padding-100-20 {
-  padding: 100px 0 20px 0; }
+.section-padding-0-50 {
+  padding: 0 0 50px; }
 
 .bg-fixed {
   background-position: center center;
@@ -318,22 +315,20 @@ img {
     transform: rotate(360deg); } }
 /* :: 5.0 Scroll Up Area CSS */
 #scrollUp {
-  background-color: #947054;
-  border-radius: 50%;
-  bottom: 40px;
-  right: 40px;
-  -webkit-box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.1);
   color: #ffffff;
+  background-color: #947054;
+  text-align: center;
+  border-radius: 50%;
+  bottom: 25px;
+  right: 25px;
   font-size: 24px;
   height: 50px;
-  text-align: center;
   width: 50px;
   line-height: 46px;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms; }
   #scrollUp:hover {
-    background-color: #000000; }
+    background-color: #323232; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     #scrollUp {
       bottom: 30px;
@@ -354,7 +349,7 @@ img {
   position: relative;
   z-index: 1;
   text-align: center;
-  margin-bottom: 50px; }
+  margin-bottom: 25px; }
   .section-heading img {
     margin-bottom: 10px; }
   .section-heading h2 {
@@ -371,7 +366,8 @@ img {
     color: #947054;
     font-size: 14px;
     margin-bottom: 0;
-    font-style: italic; }
+    font-style: italic;
+    line-height: 1; }
 
 /* :: 7.0 South Button CSS */
 .btn {
@@ -475,7 +471,8 @@ img {
   height: 100px;
   position: relative;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #000000;
+  box-shadow: 0px 10px 20px -7px black;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -601,8 +598,6 @@ img {
   width: 100%;
   z-index: 9994 !important;
   height: 100px;
-  -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   background-color: #000000; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .is-sticky .main-header-area {
@@ -610,6 +605,21 @@ img {
   @media only screen and (max-width: 767px) {
     .is-sticky .main-header-area {
       height: 80px; } }
+
+.homepage-head {
+  padding-top: 120px; }
+  .homepage-head h2 {
+    font-size: 3rem; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .homepage-head {
+      padding-top: 110px; }
+      .homepage-head h2 {
+        font-size: 2.5rem; } }
+  @media only screen and (max-width: 767px) {
+    .homepage-head {
+      padding-top: 100px; }
+      .homepage-head h2 {
+        font-size: 2rem; } }
 
 /* :: 9.0 Welcome Area CSS */
 .single-hero-slide {
@@ -1032,44 +1042,40 @@ img {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 650px; }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .call-to-action-area {
-      height: 500px; } }
-  @media only screen and (max-width: 767px) {
-    .call-to-action-area {
-      height: 500px; } }
-  .call-to-action-area .cta-content h2 {
-    color: #ffffff;
-    font-size: 48px;
-    margin-bottom: 20px;
-    text-transform: uppercase; }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      .call-to-action-area .cta-content h2 {
-        font-size: 40px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .call-to-action-area .cta-content h2 {
-        font-size: 30px; } }
-    @media only screen and (max-width: 767px) {
-      .call-to-action-area .cta-content h2 {
-        font-size: 24px; } }
-  .call-to-action-area .cta-content h6 {
-    font-size: 30px;
-    font-style: italic;
-    color: #ffffff; }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      .call-to-action-area .cta-content h6 {
-        font-size: 24px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .call-to-action-area .cta-content h6 {
-        font-size: 18px; } }
-    @media only screen and (max-width: 767px) {
-      .call-to-action-area .cta-content h6 {
-        font-size: 16px; } }
-  .call-to-action-area .cta-content p {
-    color: #ffffff; }
+  height: fit-content; }
+  .call-to-action-area .cta-content {
+    padding-top: 50px; }
+    .call-to-action-area .cta-content h2 {
+      color: #ffffff;
+      font-size: 48px;
+      text-transform: uppercase; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .call-to-action-area .cta-content h2 {
+          font-size: 40px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .call-to-action-area .cta-content h2 {
+          font-size: 30px; } }
+      @media only screen and (max-width: 767px) {
+        .call-to-action-area .cta-content h2 {
+          font-size: 24px; } }
+    .call-to-action-area .cta-content h6 {
+      font-size: 30px;
+      font-style: italic;
+      color: #ffffff; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .call-to-action-area .cta-content h6 {
+          font-size: 24px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .call-to-action-area .cta-content h6 {
+          font-size: 18px; } }
+      @media only screen and (max-width: 767px) {
+        .call-to-action-area .cta-content h6 {
+          font-size: 16px; } }
+    .call-to-action-area .cta-content p {
+      color: #ffffff; }
   .call-to-action-area .listings-content .listings-core-features li {
-    color: #ffffff; }
+    color: #ffffff;
+    margin-bottom: 0px; }
 
 /* :: 15.0 Footer Area CSS */
 .footer-area {
@@ -1078,9 +1084,8 @@ img {
   overflow-x: hidden; }
   .footer-area .copywrite-text {
     width: 100%;
-    height: 60px;
     background-color: #111113;
-    padding: 0 15px; }
+    padding: 15px; }
     .footer-area .copywrite-text p {
       margin-bottom: 0;
       font-size: 12px;
@@ -1184,6 +1189,24 @@ img {
     opacity: 1;
     visibility: visible; }
 
+.contact-social {
+  display: flex;
+  justify-content: center;
+  padding: 15px; }
+  .contact-social a {
+    margin: 0 20px; }
+    .contact-social a i {
+      font-size: 3rem;
+      color: #947054;
+      transition: all ease-in-out .5s; }
+      .contact-social a i:hover, .contact-social a i:focus {
+        color: #ffffff; }
+  .contact-social .social-disabled {
+    color: gray;
+    cursor: not-allowed; }
+    .contact-social .social-disabled:hover, .contact-social .social-disabled:focus {
+      color: gray; }
+
 .property-slider {
   position: relative;
   z-index: 1; }
@@ -1254,10 +1277,10 @@ img {
   overflow-x: hidden; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .about-content-wrapper .about-content {
-      margin-bottom: 100px; } }
+      margin-bottom: 50px; } }
   @media only screen and (max-width: 767px) {
     .about-content-wrapper .about-content {
-      margin-bottom: 100px; } }
+      margin-bottom: 50px; } }
   .about-content-wrapper .about-content img {
     margin-bottom: 40px; }
   .about-content-wrapper .featured-properties-slider {
@@ -1423,7 +1446,7 @@ img {
       .listings-content .property-meta-data img {
         margin-right: 0; } }
   .listings-content .listings-core-features {
-    padding: 70px 0;
+    padding: 50px 0;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .listings-content .listings-core-features li {
@@ -1433,7 +1456,7 @@ img {
       min-width: 33.3333333%;
       color: #323232;
       font-size: 15px;
-      margin-bottom: 25px; }
+      margin-bottom: 15px; }
       @media only screen and (max-width: 767px) {
         .listings-content .listings-core-features li {
           -webkit-box-flex: 0;
@@ -1920,3 +1943,55 @@ Google Map
   display: block;
   width: 100%;
   height: auto; }
+
+/**********************************
+Persistent contact info
+**********************************/
+.floating-contact-container {
+  position: fixed;
+  display: flex;
+  bottom: 25px;
+  left: 15px;
+  z-index: 99999; }
+  .floating-contact-container .floating-contact {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #947054;
+    color: #ffffff;
+    border-radius: 25px;
+    font-size: 24px;
+    line-height: 46px;
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    transition: all .35s ease-in-out; }
+    @media only screen and (min-width: 1000px) {
+      .floating-contact-container .floating-contact:hover {
+        background-color: #323232;
+        width: 200px; } }
+    @media only screen and (max-width: 999px) {
+      .floating-contact-container .floating-contact:hover, .floating-contact-container .floating-contact:active, .floating-contact-container .floating-contact:focus {
+        background-color: #323232;
+        transform: scale(0.9);
+        box-shadow: 0px 8px 15px #111; } }
+    .floating-contact-container .floating-contact .floating-contact-icon {
+      float: left;
+      position: relative;
+      width: 50px;
+      height: 50px; }
+      .floating-contact-container .floating-contact .floating-contact-icon i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    .floating-contact-container .floating-contact .floating-contact-text {
+      float: left;
+      vertical-align: middle;
+      height: 50px;
+      width: 150px;
+      padding-right: 15px;
+      text-align: center; }
+      .floating-contact-container .floating-contact .floating-contact-text span {
+        font-size: 16px; }

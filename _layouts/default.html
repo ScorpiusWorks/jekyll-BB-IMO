@@ -1,56 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
     <title>{{ page.title }} | {{ site.title }}</title>
 
     <!-- Favicon  -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/ico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/ico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/ico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/ico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/ico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/ico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/ico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/ico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/ico/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/ico/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/ico/favicon-16x16.png">
-    <link rel="icon" href="/assets/img/ico/favicon.ico">
-    <link rel="manifest" href="/assets/manifest.json">
-    <meta name="msapplication-TileColor" content="#947054">
-    <meta name="msapplication-TileImage" content="/assets/img/ico/ms-icon-144x144.png">
-    <meta name="theme-color" content="#947054">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/assets/img/ico/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/assets/img/ico/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/assets/img/ico/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/assets/img/ico/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/img/ico/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/img/ico/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/img/ico/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/img/ico/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/ico/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/img/ico/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/img/ico/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/ico/favicon-16x16.png"
+    />
+    <link rel="icon" href="/assets/img/ico/favicon.ico" />
+    <link rel="manifest" href="/assets/manifest.json" />
+    <meta name="msapplication-TileColor" content="#947054" />
+    <meta
+      name="msapplication-TileImage"
+      content="/assets/img/ico/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#947054" />
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Preloader -->
     <div id="preloader">
-        <div class="load"></div>
+      <div class="load"></div>
     </div>
 
-    <!-- ##### Header Area Start ##### -->
+    <!-- Header -->
     {% include header.html %}
-    <!-- ##### Header Area End ##### -->
+
+    <!-- Floating contact -->
+    <div class="floating-contact-container">
+      <a href="tel:+40786948559" class="floating-contact">
+        <div class="floating-contact-icon">
+          <i class="fa fa-phone"></i>
+        </div>
+        <div class="floating-contact-text">
+          <span>+40 786 948 559</span>
+        </div>
+      </a>
+
+      <a href="mailto:info@bb-imo.ro" class="floating-contact">
+        <div class="floating-contact-icon">
+          <i class="fa fa-envelope-o"></i>
+        </div>
+        <div class="floating-contact-text">
+          <span>info@bb-imo.ro</span>
+        </div>
+      </a>
+    </div>
 
     {{ content }}
 
-    <!-- ##### Footer Area Start ##### -->
+    <!-- Footer -->
     {% include footer.html %}
-    <!-- ##### Footer Area End ##### -->
 
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="/assets/js/jquery/jquery-2.2.4.min.js"></script>
@@ -66,14 +145,13 @@
     <script src="/assets/js/active.js"></script>
 
     <!-- Cookie bar -->
-    <script type="text/javascript"
-        src="/assets/cookie-bar/cookiebar-latest.min.js?theme=white&always=1&noGeoIp=1&refreshPage=1&remember=Autodetect">
-    </script>
+    <script
+      type="text/javascript"
+      src="/assets/cookie-bar/cookiebar-latest.min.js?theme=white&always=1&noGeoIp=1&refreshPage=1&remember=Autodetect"
+    ></script>
 
     {% if page.url contains "contact" or page.url contains "/properties/" %}
-    <!-- ##### Google Map ##### -->
-    {% include maps.html %}
-    {% endif %}
-</body>
-
+    <!-- Google Map -->
+    {% include maps.html %} {% endif %}
+  </body>
 </html>

@@ -40,12 +40,13 @@
 :: 20.0 Blog Area CSS
 :: 21.0 Contact Area CSS
 :: 22.0 Shortcode Area CSS
+:: 23.0 Floating contact CSS
 
 ##### Index of Stylesheet ##### /*
 
-/* :: 1.0 Import Fonts */
+/* :: 1.0 Import Material Icons */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+// @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 /* :: 2.0 Import All CSS */
 
@@ -216,36 +217,32 @@ img {
     height: 800px !important;
 }
 
-.section-padding-100 {
-    padding: 100px 0;
-}
-
 .section-padding-50 {
     padding: 50px 0;
 }
 
+.section-padding-25 {
+    padding: 25px 0;
+}
+
+.section-padding-25-0 {
+    padding: 25px 0 0 0;
+}
+
+.section-padding-50-25 {
+    padding: 50px 0 25px;
+}
+
+.section-padding-50-50 {
+    padding: 500px 0 50px;
+}
+
 .section-padding-50-0 {
-    padding: 50px 0 0 0;
+    padding: 50px 0 0;
 }
 
-.section-padding-100-70 {
-    padding: 100px 0 70px;
-}
-
-.section-padding-100-50 {
-    padding: 100px 0 50px;
-}
-
-.section-padding-100-0 {
-    padding: 100px 0 0;
-}
-
-.section-padding-0-100 {
-    padding: 0 0 100px;
-}
-
-.section-padding-100-20 {
-    padding: 100px 0 20px 0;
+.section-padding-0-50 {
+    padding: 0 0 50px;
 }
 
 .bg-fixed {
@@ -388,22 +385,20 @@ img {
 /* :: 5.0 Scroll Up Area CSS */
 
 #scrollUp {
-    background-color: $bg-default;
-    border-radius: 50%;
-    bottom: 40px;
-    right: 40px;
-    -webkit-box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.1);
     color: $color-white;
+    background-color: $bg-default;
+    text-align: center;
+    border-radius: 50%;
+    bottom: 25px;
+    right: 25px;
     font-size: 24px;
     height: 50px;
-    text-align: center;
     width: 50px;
     line-height: 46px;
     @include trans-duration(500ms);
 
     &:hover {
-        background-color: $color-dark;
+        background-color: $heading-color;
     }
 
     @media #{$breakpoint-md} {
@@ -429,7 +424,7 @@ img {
     position: relative;
     z-index: 1;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 
     img {
         margin-bottom: 10px;
@@ -454,6 +449,7 @@ img {
         font-size: 14px;
         margin-bottom: 0;
         font-style: italic;
+        line-height: 1;
     }
 }
 
@@ -599,7 +595,8 @@ img {
     height: 100px;
     position: relative;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: $color-dark;
+    box-shadow: 0px 10px 20px -7px rgba(0, 0, 0, 1);
     @include trans-duration(500ms);
 
     @media #{$breakpoint-md} {
@@ -771,8 +768,6 @@ img {
     width: 100%;
     z-index: 9994 !important;
     height: 100px;
-    -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: $color-dark;
 
     @media #{$breakpoint-md} {
@@ -782,6 +777,31 @@ img {
     @media #{$breakpoint-xs} {
         height: 80px;
     }
+}
+
+.homepage-head {
+    padding-top: 120px;
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    @media #{$breakpoint-md} {
+        padding-top: 110px;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media #{$breakpoint-xs} {
+        padding-top: 100px;
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
 }
 
 /* :: 9.0 Welcome Area CSS */
@@ -1353,21 +1373,22 @@ img {
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 650px;
+    height: fit-content;
 
     @media #{$breakpoint-md} {
-        height: 500px;
+        // height: 500px;
     }
 
     @media #{$breakpoint-xs} {
-        height: 500px;
+        // height: 500px;
     }
 
     .cta-content {
+        padding-top: 50px;
+
         h2 {
             color: $color-white;
             font-size: 48px;
-            margin-bottom: 20px;
             text-transform: uppercase;
 
             @media #{$breakpoint-lg} {
@@ -1408,6 +1429,7 @@ img {
 
     .listings-content .listings-core-features li {
         color: $color-white;
+        margin-bottom: 0px;
     }
 }
 
@@ -1420,9 +1442,8 @@ img {
 
     .copywrite-text {
         width: 100%;
-        height: 60px;
         background-color: #111113;
-        padding: 0 15px;
+        padding: 15px;
 
         p {
             margin-bottom: 0;
@@ -1572,6 +1593,38 @@ img {
     }
 }
 
+.contact-social {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+    a {
+        margin: 0 20px;
+
+        i {
+            font-size: 3rem;
+            color: $bg-default;
+            transition: all ease-in-out .5s;
+
+            &:hover,
+            &:focus {
+                color: $color-white;
+            }
+
+        }
+    }
+
+    .social-disabled {
+        color: gray;
+        cursor: not-allowed;
+
+        &:hover,
+        &:focus {
+            color: gray;
+        }
+    }
+}
+
 .property-slider {
     position: relative;
     z-index: 1;
@@ -1661,11 +1714,11 @@ img {
 
     .about-content {
         @media #{$breakpoint-md} {
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
 
         @media #{$breakpoint-xs} {
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
 
         img {
@@ -1917,7 +1970,7 @@ img {
     }
 
     .listings-core-features {
-        padding: 70px 0;
+        padding: 50px 0;
         @include flex-wrap(wrap);
 
         @media #{$breakpoint-xs} {}
@@ -1927,7 +1980,7 @@ img {
             min-width: 33.3333333%;
             color: $heading-color;
             font-size: 15px;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
 
             @media #{$breakpoint-xs} {
                 @include flex(0 0 100%);
@@ -2627,5 +2680,77 @@ Google Map
         display: block;
         width: 100%;
         height: auto;
+    }
+}
+
+/**********************************
+Persistent contact info
+**********************************/
+.floating-contact-container {
+    position: fixed;
+    display: flex;
+    bottom: 25px;
+    left: 15px;
+    z-index: 99999;
+
+    .floating-contact {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        background-color: $bg-default;
+        color: $color-white;
+        border-radius: 25px;
+        font-size: 24px;
+        line-height: 46px;
+        height: 50px;
+        width: 50px;
+        margin-left: 10px;
+        transition: all .35s ease-in-out;
+
+        @media only screen and (min-width: 1000px) {
+            &:hover {
+                background-color: $heading-color;
+                width: 200px;
+            }
+        }
+
+        @media only screen and (max-width: 999px) {
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $heading-color;
+                transform: scale(0.9);
+                box-shadow: 0px 8px 15px #111;
+            }
+        }
+
+        .floating-contact-icon {
+            float: left;
+            position: relative;
+            width: 50px;
+            height: 50px;
+
+            i {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .floating-contact-text {
+            float: left;
+            vertical-align: middle;
+            height: 50px;
+            width: 150px;
+            padding-right: 15px;
+            text-align: center;
+
+            span {
+                font-size: 16px;
+            }
+        }
     }
 }

@@ -5,14 +5,21 @@ slider: home
 ---
 
 <!-- ##### Hero Area Start ##### -->
-{% include hero-slider.html %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="homepage-head text-center wow fadeInUp">
+          <h2>{{ site.data.homepage.heading[page.lang] }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- ##### Hero Area End ##### -->
 
-<!-- ##### Advance Search Area Start ##### -->
-<!-- ##### Advance Search Area End ##### -->
-
 <!-- ##### Projects Area Start ##### -->
-<section class="listings-content-wrapper section-padding-100">
+<section class="listings-content-wrapper pb-5 pt-2">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -34,9 +41,9 @@ slider: home
 {% include company-info.html %}
 <!-- ##### Company info End ##### -->
 
-<!-- ##### Testimonials Area Start ##### -->
+<!-- ##### WhyUs Area Start ##### -->
 {% include why-us.html %}
-<!-- ##### Testimonials Area End ##### -->
+<!-- ##### WhyUs Area End ##### -->
 
 <!-- ##### Editor Area Start ##### -->
 <!-- ##### Editor Area End ##### -->
